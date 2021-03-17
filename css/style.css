@@ -5,9 +5,10 @@
 }
 #titulo{
 	font-style: bold;
-	font-family: 'Exo 2';
+	font-family: 'Exo 2-Bold';
 	font-size: 40px;
 	text-align: center;
+	vertical-align: middle;
 }
 .container{
 	margin-bottom: 100px !important;
