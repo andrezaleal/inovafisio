@@ -1,0 +1,296 @@
+@import "fonts.css";
+#menu{
+	background: -webkit-gradient(linear, left top, right top, from(#5ABBE5), to(#30566B));
+
+}
+.container{
+	margin-bottom: 100px !important;
+}
+html{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+h2{
+	font-style: normal;
+	font-weight: 500;
+	text-align: center;
+	color: #41B381;
+	font-family: Orkney-Bold;
+	padding: 26px 0;
+}
+
+h4{
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	font-family: Roboto-Bold;
+	margin-bottom: 45px;
+    font-size: 42px;
+}
+
+h6{
+	font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-family: Roboto-Bold;
+    padding: 24px 0;
+    font-size: 32px;
+}
+
+
+p{
+	font-family: Roboto-Medium;
+    font-size: 30px;
+    margin: 0;
+
+}
+b{
+	font-weight: bold !important;
+}
+button{
+    background-color: #41B381;
+    border-radius: 22px !important;
+    border: none;
+    font-family: Roboto-Medium !important;
+    color: white;
+    font-size: 30px !important;
+    position: absolute;
+    margin: 0 auto;
+    padding: 15px 84px;
+    left: 0;
+    top: 96%;
+    right: 0;
+    cursor: pointer;
+    filter: drop-shadow(0px 3px 6px rgba(52, 60, 88, 0.4));
+    outline-style: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+button:focus{
+    background-color: #41B381;
+}
+
+verde{
+	font-weight: bold;
+	color: #9ED692;
+}
+
+.Button-noAbso{
+	position: static;
+	filter: drop-shadow(0px 3px 6px rgba(52, 60, 88, 0.4));
+}
+
+.ButtonS2{
+	width: 150px;
+	height: 150px !important;
+	border-radius: 100px !important;
+	background: #41B381;
+	position: absolute;
+	padding: 20px;
+	margin: 0 !important;
+	top: 70px;
+	left: 50px;
+	box-shadow: 0px 3px 6px rgba(52, 60, 88, 0.4);
+}
+
+.LabelS2{
+	position: absolute;
+	padding: 20px;
+	margin: 0 !important;
+	font-size: 36px;
+	font-weight: bolder;
+	top: 215px;
+	left: 55px;
+}
+
+.ButtonS2-cond{
+	width: 150px;
+	height: 150px !important;
+	border-radius: 100px !important;
+	background: #41B381;
+	position: absolute;
+	padding: 20px;
+	margin: 0 !important;
+	top: 70px;
+	left: calc(100vw - 350px);
+	box-shadow: 0px 3px 6px rgba(52, 60, 88, 0.4);
+}
+
+
+.LabelS2-cond{
+	position: absolute;
+	padding: 20px;
+	margin: 0 !important;
+	font-size: 36px;
+	font-weight: bolder;
+	top: 215px;
+	left: calc(100vw - 395px);
+	text-align: center;
+	line-height: 1.2;
+}
+
+.ButtonS2-mente{
+	width: 150px;
+	height: 150px !important;
+	border-radius: 100px !important;
+	background: #41B381;
+	position: absolute;
+	padding: 20px;
+	margin: 0 auto !important;
+	top: 430px;
+	box-shadow: 0px 3px 6px rgba(52, 60, 88, 0.4);
+}
+
+.LabelS2-mente{
+	position: absolute;
+	padding: 20px;
+	margin: 0 auto !important;
+	font-size: 36px;
+	font-weight: bolder;
+	bottom: -140px;
+	left: calc(100vw - 65vw);
+}
+
+.modal{
+	border-radius: 400px !important;
+}
+
+.modal-content{
+	padding: 150px !important;
+	text-align: center;
+}
+
+.modal-content h2{
+	padding-bottom: 25px !important;
+	font-weight: bold !important;
+	color: black;
+}
+
+.modal-content p{
+	padding-bottom: 25px !important;
+}
+
+.modal-content a{
+	font-size: 26px;
+}
+
+.images{
+	padding: 46px 0;
+}
+.div-sombra{
+	border-radius: 28px;
+    padding-bottom: 37px !important;
+    position: relative;
+}
+.linha{
+	border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #C4C4C4;
+    padding-bottom: 25px;
+}
+
+.button-verde{
+    background-color: rgb(143,219,130,0.3);
+    opacity: 100%;
+    border-radius: 22px !important;
+    border: solid;
+    border-color: #7FCA70;
+    font-family: Roboto-Medium !important;
+    color: black;
+    cursor: pointer;
+    position: relative !important;
+    filter: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.button-verde:focus{
+     background-color: rgb(143,219,130,0.3);
+}
+.button-cinza{
+    background-color: white;
+    opacity: 100%;
+    border-radius: 22px !important;
+    border: solid;
+    border-color: #666E75;
+    font-family: Roboto-Medium !important;
+    color: #666E75;
+    cursor: pointer;
+    position: relative !important;
+    filter: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.button-cinza:focus{
+     background-color: white;
+}
+.circulo{
+    margin: 14px 0;
+}
+.row .lista{
+    padding-bottom: 0;
+    margin: 0 auto;
+}
+/*modal sessao 3 dor aguda*/
+.modal.modal-sessao3{
+    border-radius: 50px 50px 0 0 !important;
+}
+.modal.bottom-sheet {
+    top: auto;
+    bottom: -100%;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 99%;
+    border-radius: 0;
+    will-change: bottom, opacity;
+}
+.modal-content.sessao3{
+    padding: 65px 1px !important;
+    text-align: left;
+}
+
+#modal1 h4{
+    font-size: 59px;
+}
+
+#modal2 h4{
+    font-size: 59px;
+}
+.fechar-modal{
+    padding: 0 70px 0 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.assetstats{
+	width: 100% !important;
+	padding-top: 15px !important;
+}
+/*Classes para correção de espaçamento*/
+
+.removeMarginB{
+	margin-bottom: 0 !important;
+}
+
+.removePaddingB{
+	padding-bottom: 0 !important;
+}
+
+.paddingTop{
+	padding-top: 50px !important;
+}
+.paddingBottom{
+	padding-bottom: 50px !important;
+}
+.setPadding{
+	padding: 50px !important; 
+}
+.setPaddingsH{
+	padding-top: 50px !important;
+	padding-bottom: 50px !important;
+}
+
+.setPaddingsV{
+	padding-left: 50px !important;
+	padding-right: 50px !important;
+}
+
+.img-modal{
+    margin: 50px 0px 88px 0;
+}
