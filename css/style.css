@@ -1,6 +1,7 @@
 @import "fonts.css";
 #barra-status{
 	background: -webkit-gradient(linear, left top, right top, from(#5ABBE5), to(#30566B));
+	padding: 14%;
 }
 #titulo{
 	font-style: bold;
