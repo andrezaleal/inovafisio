@@ -1,0 +1,9 @@
+.container{
+	margin-bottom: 100px !important;
+}
+html{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.barra-status{
+	background-image: linear-gradient(to bottom, white, purple);
+}
