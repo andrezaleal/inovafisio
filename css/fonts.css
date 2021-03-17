@@ -60,7 +60,7 @@
 @font-face {
   font-family: "Exo 2-Bold";
   src: url("../fonts/Exo2-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: bolder;
   font-style: normal;
 }
 @font-face {
@@ -73,5 +73,11 @@
   font-family: "Exo 2-Regular";
   src: url("../fonts/Exo2-Regular.ttf") format("truetype");
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Exo 2-Semi";
+  src: url("../fonts/Exo2-SemiBold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
 }

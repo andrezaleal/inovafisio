@@ -13,9 +13,10 @@
 	background-color: #5ABBE5;
     padding: 1.5% 1.5% 73%;
     width: 0px;
+
 }
 #titulo{
-	font-style: bold;
+	font-style: bolder;
 	font-family: 'Exo 2-Bold';
 	font-size: 80px;
 	text-align: center;
@@ -25,8 +26,14 @@
 	top: 50%;
 	transform: translateY(-50%); 
 }
+#container3{
+	margin-top: 14% !important;
+}
+#container2{
+	margin-top: 14% !important;
+}
 .container{
-	margin-bottom: 100px !important;
+	margin-top: 10% !important;
 }
 html{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -50,12 +57,20 @@ h4{
 }
 
 h6{
-	font-style: normal;
-    font-weight: bold;
+	font-style: bold;
+	font-family: 'Exo 2-Semi';
     text-align: center;
-    font-family: Roboto-Bold;
     padding: 24px 0;
     font-size: 32px;
+	color: #30566B;
+}
+h5{
+	font-style: bold;
+	font-family: 'Exo 2-Semi';
+    text-align: center;
+    padding: 24px 0;
+    font-size: 32px;
+	color: #FFFF;
 }
 
 
