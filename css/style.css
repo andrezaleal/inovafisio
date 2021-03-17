@@ -14,7 +14,11 @@
 	font-family: 'Exo 2-Bold';
 	font-size: 80px;
 	text-align: center;
+	align-items: center;
 	vertical-align: middle;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); 
 }
 .container{
 	margin-bottom: 100px !important;
