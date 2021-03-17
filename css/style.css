@@ -10,7 +10,7 @@
 	background-color: #305C6B;
 }
 #titulo{
-	font-style: bold;
+	font-style: bolder;
 	font-family: 'Exo 2-Bold';
 	font-size: 80px;
 	text-align: center;
@@ -21,7 +21,10 @@
 	transform: translateY(-50%); 
 }
 .container{
-	margin-bottom: 100px !important;
+	margin-top: 44% !important;
+}
+#container2{
+	margin-top: 25% !important;
 }
 html{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -45,12 +48,20 @@ h4{
 }
 
 h6{
-	font-style: normal;
-    font-weight: bold;
+	font-style: bold;
+	font-family: 'Exo 2-Semi';
     text-align: center;
-    font-family: Roboto-Bold;
     padding: 24px 0;
     font-size: 32px;
+	color: #30566B;
+}
+h5{
+	font-style: bold;
+	font-family: 'Exo 2-Semi';
+    text-align: center;
+    padding: 24px 0;
+    font-size: 32px;
+	color: #FFFF;
 }
 
 
