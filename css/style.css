@@ -1,7 +1,6 @@
 @import "fonts.css";
 #menu{
 	background: -webkit-gradient(linear, left top, right top, from(#5ABBE5), to(#30566B));
-
 }
 #titulo{
 	font-style: bold;
