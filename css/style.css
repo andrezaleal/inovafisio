@@ -9,6 +9,11 @@
 .menu-baixo{
 	background-color: #305C6B;
 }
+#barrinha{
+	background-color: #5ABBE5;
+    padding: 1.5% 1.5% 73%;
+    width: 0px;
+}
 #titulo{
 	font-style: bolder;
 	font-family: 'Exo 2-Bold';
@@ -74,25 +79,7 @@ p{
 b{
 	font-weight: bold !important;
 }
-button{
-    background-color: #41B381;
-    border-radius: 22px !important;
-    border: none;
-    font-family: Roboto-Medium !important;
-    color: white;
-    font-size: 30px !important;
-    position: absolute;
-    margin: 0 auto;
-    padding: 15px 84px;
-    left: 0;
-    top: 96%;
-    right: 0;
-    cursor: pointer;
-    filter: drop-shadow(0px 3px 6px rgba(52, 60, 88, 0.4));
-    outline-style: none;
-    text-decoration: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
+
 
 button:focus{
     background-color: #41B381;
