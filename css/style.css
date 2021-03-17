@@ -25,11 +25,14 @@
 	top: 50%;
 	transform: translateY(-50%); 
 }
-.container{
-	margin-top: 44% !important;
+#container3{
+	margin-top: 14% !important;
 }
 #container2{
-	margin-top: 25% !important;
+	margin-top: 14% !important;
+}
+.container{
+	margin-top: 10% !important;
 }
 html{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
