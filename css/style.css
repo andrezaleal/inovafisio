@@ -3,6 +3,12 @@
 	background: -webkit-gradient(linear, left top, right top, from(#5ABBE5), to(#30566B));
 	padding: 14%;
 }
+.menu-cima{
+	background-color: #5ABBE5;
+}
+.menu-baixo{
+	background-color: #305C6B;
+}
 #titulo{
 	font-style: bold;
 	font-family: 'Exo 2-Bold';
