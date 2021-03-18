@@ -15,7 +15,20 @@
 	margin-left: 50%;
     padding: 1.5% 1.5% 50% !important;
     width: 0px;
-
+}
+#barrinha2{
+	margin-top: 25%;
+	margin-left: 50%;
+    padding: 1.5% 3% 125% !important;
+    width: 0px;
+	border-radius: 10px;
+}
+#barrinha3{
+	background-color: #5ABBE5;
+	margin-top: 20%;
+	margin-left: 50%;
+    padding: 1.5% 1.5% 100% !important;
+    width: 0px;
 }
 #titulo{
 	font-style: bolder;
@@ -41,10 +54,11 @@ html{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .editarperfil{
-	font-size: 150%;
+	font-size: 300%;
 	text-align: left !important;
 	margin-top: 15%;
 	color: #FFF;
+	margin-left: -30%;
 }
 h2{
 	font-style: normal;
@@ -67,9 +81,9 @@ h4{
 h6{
 	font-style: bold;
 	font-family: 'Exo 2-Semi';
-    text-align: center;
+    text-align: left;
     padding: 24px 0;
-    font-size: 32px;
+    font-size: 40px;
 	color: #30566B;
 }
 h5{
@@ -77,8 +91,24 @@ h5{
 	font-family: 'Exo 2-Semi';
     text-align: center;
     padding: 24px 0;
-    font-size: 32px;
+    font-size: 40px;
 	color: #FFFF;
+}
+h8{
+	font-style: medium;
+	font-family: 'Exo 2-Medium';
+    text-align: center;
+    font-size: 250%;
+	color: #323B43;
+	margin-top: 20% !important;
+}
+h7{
+	font-style: bold;
+	font-family: 'Exo 2-Bold';
+    text-align: left;
+    font-size: 150%;
+	color: #323B43;
+
 }
 .pessoa{
 	font-style: bold;
@@ -93,10 +123,7 @@ button{
 	border-radius: 10% !important;
 	}
 p{
-	font-family: Roboto-Medium;
-    font-size: 30px;
     margin: 0;
-
 }
 b{
 	font-weight: bold !important;
