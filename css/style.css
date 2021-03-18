@@ -60,10 +60,10 @@ html{
 }
 .editarperfil{
 	font-size: 300%;
-	text-align: left !important;
-	margin-top: 15%;
-	color: #FFF;
-	margin-left: -30%;
+    text-align: center !important;
+    margin-top: 15%;
+    color: #FFF;
+    margin-left: -30%;
 }
 h2{
 	font-style: normal;
@@ -126,6 +126,7 @@ h7{
 button{
 	background-color: #30566B;
 	border-radius: 10% !important;
+	border-style: none;z
 	}
 p{
     margin: 0;
@@ -136,13 +137,8 @@ b{
 
 
 button:focus{
-    background-color: #41B381;
 }
 
-verde{
-	font-weight: bold;
-	color: #9ED692;
-}
 
 .Button-noAbso{
 	position: static;
