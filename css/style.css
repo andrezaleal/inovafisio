@@ -3,6 +3,13 @@
 	background: -webkit-gradient(linear, left top, right top, from(#5ABBE5), to(#30566B));
 	padding: 14%;
 }
+.nav-menu{
+	color: #fff;
+    width: 100%;
+    background-color: #30566B;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
 .menu-cima{
 	background-color: #5ABBE5;
 }
@@ -38,7 +45,7 @@
 	text-align: center;
 	align-items: center;
 	vertical-align: middle;
-	position: relative;
+	position:relative !important;
 	top: 50%;
 	transform: translateY(-50%); 
 }
@@ -63,6 +70,7 @@
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
+
 /* CUSTOM FIXED FOOTER FOR MATERIALIZE
 */
 .footer-fixed {
@@ -72,28 +80,30 @@
 }
 
 
-/* CUSTOM FOOTER LAYOUT
-/ Poorly done. Should probably use flexbox here to distribute the <li> elements.*/
 footer {
-		ul {
-			&.justify {
-				text-align: center;
-				display: table;
-				overflow: hidden;
-				margin: 0 auto;
-				li {
-					margin-left:auto;
-					margin-right:auto;
-					/*width: 138px; // 3 ICONS
-					//width: 100px; / 4 ICONS*/
-					width: 82px; /* 5 ICONS*/
-			}
-		}	
-	}
 }
+	
+	.justify {
+		
+		text-align: center;
+		display:table;
+		overflow: hidden;
+		margin: 0 auto;
+}
+			li {
+				margin-left:auto;
+				margin-right:auto;
+				
+				width: 190px;
+			}
+			
+
+
+
 
 .img-icon{
-	width: 20px;
+	width: 60px;
+	text-align: center;
 }
 
 html{
