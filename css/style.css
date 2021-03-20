@@ -10,6 +10,16 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
+.campo-busca{
+	background-color: white !important;
+}
+.barra-busca{
+	background-color: #5ABBE5;
+    height: 191px;
+}
+.categorias{
+	background-color: #5ABBE5;
+}
 .menu-cima{
 	background-color: #5ABBE5;
 }
