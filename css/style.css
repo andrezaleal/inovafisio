@@ -9,6 +9,7 @@
     background-color: #30566B;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+	height: auto;
 }
 .campo-busca{
 	background-color: white !important;
@@ -142,6 +143,9 @@ footer {
 .img-icon{
 	width: 60px;
 	text-align: center;
+	justify-content: center;
+	margin-top: 10%;
+	margin-bottom: 0;
 }
 
 
@@ -556,6 +560,7 @@ button:focus{
 	position:relative !important;
 	top: 50%;
 	transform: translateY(-50%); 
+	margin-bottom: 10%;
   }
   .exo2-bold-white-16px {
 	color: white;
