@@ -2,26 +2,34 @@
 <html>
 <head>
 	<link rel="icon" href="imgs/favicon.png" type="image/x-icon" />
-	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="../js/jquery-3.5.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<link rel="stylesheet" href="../css/style.css">
-	<script type="text/javascript" src="js/main.js"></script>
-	<script  src="js/main.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
 	<meta charset="utf-8">
 	<title>InovaForms</title>
 </head>
 <body>
 	<div class="row">
 		<nav id="barra-status">
-		<a href="forms_Aplicar_pelvico.html" class="waves-effect waves-light btn"><i class="material-icons left">chevron_left</i></a>
+		<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn"><i class="material-icons left">chevron_left</i></a>
 		<div id="titulo">Formulários</div>
-		<div id="titulo"><h1>Aplicar</h1></div>
+		<div id="titulo"><h5>Visualizar</h5></div>
 		</nav>
 	</div>
-	
-	<div class="container">
+ <div class="row">
+	  	<div class="col s12">
+	  		<h6>Questionário de Impacto no Assoalho Pélvico</h6>
+	  		<div class="row linha">
+	  			<div class="col s6 center-align">
+	  				<button id="button-verde-cronica" class="button-verde" onclick="funcaoCronica1()">Respostas</button>
+	  			</div>
+	  			<div class="col s6 center-align">
+	  				<button id="button-cinza-cronica" class="button-cinza" onclick="funcaoCronica2()">Resultados</button>
+	  			</div>
+	  		</div>
+	  		<div class="container">
 		<div class="row">
 
 	      <div class="col s12">
@@ -38,15 +46,15 @@
 	      	</div>
 
 	      	<div class="col s12">
-	      		<textarea class="rectangle-33"></textarea>
+	      		<textarea class="rectangle-33" disabled></textarea>
 	      	</div>
 
 	      	<div class="col s12">
-	      		<label class="bexiga exo2-semi-bold-tuna-16px">Intestino</label>
+	      		<label class="bexiga exo2-semi-bold-tuna-16px" >Intestino</label>
 	      	</div>
 
 	      	<div class="col s12">
-	      		<textarea class="rectangle-33"></textarea>
+	      		<textarea class="rectangle-33" disabled></textarea>
 	      	</div>
 
 	      	<div class="col s12">
@@ -54,20 +62,19 @@
 	      	</div>
 
 	      	<div class="col s12">
-	      		<textarea class="rectangle-33"></textarea>
+	      		<textarea class="rectangle-33" disabled></textarea>
 	      	</div>
 	      </form>
 
 	      <div class="col s12">
 
-	      <a href="forms_Aplicar_pelvico3.html" ><button class="avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 100px; display: block;
+	      <a href="forms_editar_respostas.html" ><button class="avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 100px; display: block;
 			margin-left: auto;
-			margin-right: auto;">Avançar</button></a>
+			margin-right: auto;">Editar respostas</button></a>
 	  </div>
 
 	</div>
    </div>
-
-
 </body>
+<script type="text/javascript" src="../js/main.js"></script>
 </html>

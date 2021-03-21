@@ -367,7 +367,7 @@ button:focus{
 }
 
 .modal{
-	border-radius: 400px !important;
+	border-radius: 100px !important;
 }
 
 .modal-content{
