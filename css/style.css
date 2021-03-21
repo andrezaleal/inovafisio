@@ -66,6 +66,7 @@
 .btn i, .btn-large i, .btn-small i, .btn-floating i, .btn-large i, .btn-small i, .btn-flat i {
     font-size: 4.3rem;
     line-height: normal;
+	align-items: center;
 }
 .btn, .btn-large, .btn-small {
     text-decoration: none;
@@ -79,6 +80,7 @@
     font-family: 'Exo 2-Bold';
     height: 61px;
     line-height: 28px;
+	align-items: center;
 }
 #container3{
 	margin-top: 14% !important;
