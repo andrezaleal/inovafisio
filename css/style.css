@@ -63,6 +63,23 @@
 
 		text-align: center;
 }
+.btn i, .btn-large i, .btn-small i, .btn-floating i, .btn-large i, .btn-small i, .btn-flat i {
+    font-size: 4.3rem;
+    line-height: normal;
+}
+.btn, .btn-large, .btn-small {
+    text-decoration: none;
+    color: #fff;
+    background-color: #30566B;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    font-family: 'Exo 2-Bold';
+    height: 61px;
+    line-height: 28px;
+}
 #container3{
 	margin-top: 14% !important;
 }

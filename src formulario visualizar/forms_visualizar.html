@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="imgs/favicon.png" type="image/x-icon" />
+	<script src="../js/jquery-3.5.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<meta charset="utf-8">
+	<title>InovaForms</title>
+</head>
+<body>
+	<div class="row">
+		<nav id="barra-status">
+		<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn"><i class="material-icons left">chevron_left</i></a>
+		<div id="titulo">Formulários</div>
+		<div id="titulo"><h5>Visualizar</h5></div>
+		</nav>
+	</div>
+	<!--inicio barra de pesquisa-->
+	<div class="container">
+		<div class="row">
+			<div class="col s6 barra-busca">
+				<h6>Busca por área</h6>
+					<div class="input-field col s12">
+						<select >
+							<option value="" disabled selected>Toque para ver filtros</option>
+							<option value="1">Área</option>
+							<option value="2">Data de aplicação</option>
+							<option value="3">Local de trabalho</option>
+							<option value="4">Paciente</option>
+						</select>
+						<label>Filtros</label>
+					</div>
+			</div>
+
+			<div class="col s6 barra-busca">
+				<a class="waves-effect waves-light btn"><i class="material-icons left">search</i></a>
+			</div>
+		</div>
+		<!--fim barra de pesquisa-->
+		<!--inicio categorias-->
+		<div class="row">
+			<h6>Antônio Carlos da Silva</h6>
+			<div class="col s6 categorias" style="display: inline-block">
+				<h6 style="display: inline-block">BASFI- Espondilite Anquilosante</h6>
+			</div>
+		</div>
+
+		<div class="row">
+			<h6>Dávila Fernandes</h6>
+			<div class="col s6 categorias" style="display: inline-block">
+				<h6 style="display: inline-block">Questionário de Impacto no Assoalho Pélvico</h6>
+			</div>
+		</div>
+		<!--fim categorias-->
+	</div>
+</body>
+<script type="text/javascript" src="../js/main.js"></script>
+</html>
