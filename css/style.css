@@ -237,6 +237,15 @@ h7{
     text-align: left;
     font-size: 150%;
 	color: #323B43;
+}
+h3{
+	font-style: bold;
+	font-family: 'Exo 2-Bold';
+    text-align: center;
+    font-size: 300%;
+	color: #323B43;
+	margin-top: 10%;
+	margin-bottom: 20%;
 
 }
 .pessoa{
