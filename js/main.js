@@ -26,3 +26,19 @@ document.addEventListener('DOMContentLoaded', function() {
   $(document).ready(function(){
     $('.modal').modal();
 });
+
+// botoes repostas e resultados
+let buttonClick1 = document.getElementById('meubotao1'); //O botao criado deve ter o campo id="meubotao"
+let buttonClick2 = document.getElementById('meubotao2');
+
+buttonClick1.addEventListener("click",function(event){
+    window.location.href = "../src formulario visualizar/forms_respostas_pelvica.html";
+    console.log("Tentei redirecionar!!!");
+});
+
+buttonClick2.addEventListener("click",function(event){
+
+//Usando esse método você vai para outra página e não pode usar o voltar do navegador    
+window.location.href = "../src formulario concluido/forms_respostas.html";
+    console.log("Tentei redirecionar!!!");
+});
