@@ -431,20 +431,21 @@ button:focus{
 }
 
 .button-verde{
-    background-color: rgb(143,219,130,0.3);
+    background-color: rgb(48,86,107,1);
     opacity: 100%;
     border-radius: 22px !important;
     border: solid;
-    border-color: #7FCA70;
-    font-family: Roboto-Medium !important;
-    color: black;
+    border-color: #30566B;
+    font-family: 'Exo 2-Semi' !important;
+	font-size: 40px;
+    color: white;
     cursor: pointer;
     position: relative !important;
     filter: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .button-verde:focus{
-     background-color: rgb(143,219,130,0.3);
+     background-color:rgb(48,86,107,0.3);
 }
 .button-cinza{
     background-color: white;
@@ -452,7 +453,8 @@ button:focus{
     border-radius: 22px !important;
     border: solid;
     border-color: #666E75;
-    font-family: Roboto-Medium !important;
+    font-family: 'Exo 2-Semi' !important;
+	font-size: 40px;
     color: #666E75;
     cursor: pointer;
     position: relative !important;
