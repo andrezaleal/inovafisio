@@ -42,3 +42,15 @@ buttonClick2.addEventListener("click",function(event){
 window.location.href = "../src formulario concluido/forms_respostas.html";
     console.log("Tentei redirecionar!!!");
 });
+
+//select de busca
+ document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });

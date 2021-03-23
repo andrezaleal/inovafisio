@@ -15,60 +15,58 @@
 		<nav id="barra-status">
 		<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn"><i class="material-icons left">chevron_left</i></a>
 		<div id="titulo">Formulários</div>
-		<div id="titulo"><h5>Visualizar</h5></div>
+		<div id="titulo"><h5>Fazer Upload</h5></div>
 		</nav>
 	</div>
- <div class="row">
-	  	<div class="col s12">
-	  		<h6>Questionário de Impacto no Assoalho Pélvico</h6>
-	  		<div class="row linha" id="botoes">
-	  			<div class="col s6 center-align">
-	  				<button id="meubotao1" class="button-verde" >Respostas</button>
-	  			</div>
-	  			<div class="col s6 center-align">
-	  				<button id="meubotao2" class="button-cinza">Resultados</button>
-	  			</div>
-	  		</div>
-	  	</div>
-	  </div>
+	<!--inicio barra de pesquisa-->
+	<div class="container">
 		<div class="row">
+			<div class="col s6 barra-busca">
+				<h6>Filtro</h6>
+					<div class="input-field col s12">
+						<select >
+							<option value="" disabled selected>Toque para ver filtros</option>
+							<option value="1">Área</option>
+							<option value="2">Data de aplicação</option>
+							<option value="3">Local de trabalho</option>
+							<option value="4">Paciente</option>
+						</select>
+						<label>Filtros</label>
+					</div>
+			</div>
 
+			<div class="col s6 barra-busca">
+				<a class="waves-effect waves-light btn"><i class="material-icons left">search</i></a>
+			</div>
+		</div>
+		<!--fim barra de pesquisa-->
+		<div class="row">
 			<div class="col s12">
-				<h2 style="color: #30566B; margin-top: 0px; margin-bottom: 0px;">Questionário de Impacto no Assoalho Pélvico</h2>
-			</div>
-
-			<div class="col s12 ">
-				<p><b>Paciente:</b>Dávila Fernandes</p>
-			</div>
-
-			<div class="col s6 ">
-				<p><b>Data de aplicação:</b>09/03/2021</p>
-			</div>
-
-			<div class="col s12 ">
-				<p><b>Local:</b>Hospital Geral de Fortaleza</p>
-			</div>
-
-			<div class="col s12 ">
-				<p><b>Explicação do resultado:</b>Não há resultados.</p>
+				<p>Ao fazer Upload do arquivo para a núvem, ele será exluido do seu dispositivo</p>
 			</div>
 		</div>
-		<div class="col s12">
-
-			<button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger" href="#modal1" style="margin-top: 100px; display: inline-block;
-			margin-left: auto;
-			margin-right: auto;">Excluir questionário</button>
-			<button class="  avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 100px; display: inline-block;
-			margin-left: auto;
-			margin-right: auto;">Visualizar pacientes</button>
-
+		<!--inicio categorias-->
+		<div class="row">
+			<h6>Davila Fernandes</h6>
+			<div class="col s6 categorias" style="display: inline-block">
+				<h6 style="display: inline-block">Avaliação da Capacidade Funcional</h6>
+				<img src="../assets/icon_upload.png" style="width: 9%; margin-top: 1%;" class="valign-text-middle exo2-bold-white-16px modal-trigger" href="#modal1">
+			</div>
 		</div>
 
-		<!--inicio modal de excluir formulário-->
+		<div class="row">
+			<div class="col s6 categorias" style="display: inline-block">
+				<h6 style="display: inline-block">Questionário de Impacto no Assoalho Pélvico</h6>
+				<img src="../assets/icon_upload.png" style="width: 9%; margin-top: 1%;" class="valign-text-middle exo2-bold-white-16px modal-trigger">
+			</div>
+		</div>
+		<!--fim categorias-->
+	</div>
+	<!--inicio modal de excluir formulário-->
 		<!-- Modal Structure -->
 		<div id="modal1" class="modal">
 			<div class="modal-content">
-				<h6>Deseja excluir o formulário “Questionário de Impacto no Assoalho Pélvico”?</h6>
+				<h6>Deseja enviar o formulário “Avaliação da capacidade funcional” para a núvem?</h6>
 			</div>
 			<div class="modal-footer">
 				<button class=" modal-close avanar valign-text-middle exo2-bold-white-16px" href="#!" style="margin-top: 100px; display: inline-block;
@@ -77,7 +75,7 @@
 
 				<button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger fechar-modal modal-close" href="#modal2" style="margin-top: 100px; display: inline-block;
 				margin-left: auto;
-				margin-right: auto;">Excluir</button>
+				margin-right: auto;">Enviar</button>
 			</div>
 		</div>
 		<!--fim modal de excluir formulario-->
@@ -87,10 +85,10 @@
 		<div id="modal2" class="modal">
 			<div class="modal-content" style="background-color: #30566B;">
 				<img src="../assets/icon_confirma.png">
-				<h6 style="color: white;">O formulário “Questionário de Impacto no Assoalho Pélvico” foi excluído com sucesso</h6>
+				<h6 style="color: white;">Seu formulário foi enviado pra o Drive com sucesso</h6>
 			</div>
 			<div class="modal-footer">
-				<a href="../src formulario visualizar/forms_visualizar.html"><button class=" avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 100px; display: inline-block;
+				<button class=" avanar valign-text-middle exo2-bold-white-16px modal-close" href="#!" style="margin-top: 100px; display: inline-block;
 				margin-left: auto;
 				margin-right: auto;">Concluir</button></a>
 			</div>
