@@ -125,4 +125,19 @@
 </div>
 <!--fim do menu inferior-->  
 <script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript">
+	let buttonClick3 = document.getElementById('meubotao3'); //O botao criado deve ter o campo id="meubotao"
+	let buttonClick4 = document.getElementById('meubotao4');
+
+	console.log(buttonClick3);
+	buttonClick3.addEventListener("click",function(event){
+	    window.location.href = "../pacientes/pacientes_visualizar.html";
+	    console.log("Tentei redirecionar!!!");
+	});
+	console.log(buttonClick4);
+	buttonClick4.addEventListener("click",function(event){
+	    window.location.href = "../pacientes/pacientes_formulario.html";
+	    console.log("Tentei redirecionar!!!");
+	});
+</script>
 </html>
