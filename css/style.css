@@ -3,6 +3,9 @@
 	background: -webkit-gradient(linear, left top, right top, from(#5ABBE5), to(#30566B));
 	padding: 14%;
 }
+.img-icon-inicial{
+	margin: 0px 0 45px 51px;
+}
 .nav-menu{
 	color: #fff;
     width: 100%;
@@ -234,11 +237,12 @@ html{
     margin-left: -30%;
 }
 h2{
-	font-style: normal;
 	font-weight: 500;
-	color: #41B381;
-	font-family: Orkney-Bold;
-	padding: 26px 0;
+	padding: 61px 0;
+	font-family: 'Exo 2-Bold';
+    text-align: center;
+	color: #323B43;
+	font-size: 100px;
 }
 
 h4{
