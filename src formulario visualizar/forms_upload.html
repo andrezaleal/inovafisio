@@ -11,72 +11,91 @@
 	<title>InovaForms</title>
 </head>
 <body>
-	<div class="row">
+		<!--inicio título-->
 		<nav id="barra-status">
-		<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn"><i class="material-icons left">chevron_left</i></a>
-		<div id="titulo">Formulários</div>
-		<div id="titulo"><h5>Fazer Upload</h5></div>
-		</nav>
+			<div class="row">
+			<div class="col s1" style="display: flex; flex-direction: column; align-items: flex-start; margin-left: -10%;">
+		<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn" style="background-color: rgba(0, 0, 0, 0);"><i class="material-icons center">chevron_left</i></a>
 	</div>
+	<div class="col s12 center-align">
+		<div id="titulo">Formulários</div>
+	</div>	
+	</div>
+	<div class="row">
+		<div class="col s12 center-align">
+			<div id="titulo" style="font-size: 55px;">Upload</div>
+		</div>
+	</div>
+	</nav>
+		<!--fim título-->
 	<!--inicio barra de pesquisa-->
 	<div class="container">
 		<div class="row">
-			<div class="col s6 barra-busca">
-				<h6>Filtro</h6>
-					<div class="input-field col s12">
-						<select >
+			<div class="col s10 barra-busca" style="border-bottom-left-radius: 20px; border-top-left-radius: 20px;">
+				<h6 style="margin-left: 5%;">Filtros</h6>
+					<div class="input-field col s12" style="background-color: #EBF0F1;
+					border-radius: 7px; width: 90%; margin-left: 5%; height: 50px;">
+						<select>
 							<option value="" disabled selected>Toque para ver filtros</option>
 							<option value="1">Área</option>
 							<option value="2">Data de aplicação</option>
 							<option value="3">Local de trabalho</option>
 							<option value="4">Paciente</option>
 						</select>
-						<label>Filtros</label>
 					</div>
 			</div>
 
-			<div class="col s6 barra-busca">
-				<a class="waves-effect waves-light btn"><i class="material-icons left">search</i></a>
+			<div class="col s2 barra-busca" style="border-bottom-right-radius: 20px; border-top-right-radius: 20px;">
+				<a class="waves-effect waves-light btn"style="position:relative !important;
+				top: 85%;
+				transform: translateY(-85%); border-radius: 10px; height: 50px;"><img class="material-icons left" src="../assets/filter.svg" style="width: 200%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);"></a>
 			</div>
 		</div>
 		<!--fim barra de pesquisa-->
 		<div class="row">
 			<div class="col s12">
-				<p>Ao fazer Upload do arquivo para a núvem, ele será exluido do seu dispositivo</p>
+				<p style="font-family: 'Exo 2-Regular'; font-size: 30px; color: #899199; text-align: center;">Ao fazer Upload do arquivo para a núvem, ele será excluído do seu dispositivo</p>
 			</div>
 		</div>
 		<!--inicio categorias-->
 		<div class="row">
-			<h6>Davila Fernandes</h6>
-			<div class="col s6 categorias" style="display: inline-block">
-				<h6 style="display: inline-block">Avaliação da Capacidade Funcional</h6>
+			<h6 style="margin-top: 10%; font-size: 48px;">Davila Fernandes</h6>
+			<div class="col s12 categorias" style="display: inline-block; border-radius: 20px; margin-top: 5%; background-color: #4A96B5;">
+				<h6 style="display: inline-block; color: white; font-size: 48px; font-family: 'Exo 2-Medium';">Avaliação da Capacidade Funcional</h6>
 				<img src="../assets/icon_upload.png" style="width: 9%; margin-top: 1%;" class="valign-text-middle exo2-bold-white-16px modal-trigger" href="#modal1">
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col s6 categorias" style="display: inline-block">
-				<h6 style="display: inline-block">Questionário de Impacto no Assoalho Pélvico</h6>
+			<div class="col s12 categorias" style="display: inline-block; border-radius: 20px; margin-top: 5%; background-color: #4A96B5;">
+				<h6 style="display: inline-block; color: white; font-size: 48px; font-family: 'Exo 2-Medium';">Questionário de Impacto no Assoalho Pélvico</h6>
 				<img src="../assets/icon_upload.png" style="width: 9%; margin-top: 1%;" class="valign-text-middle exo2-bold-white-16px modal-trigger">
 			</div>
 		</div>
 		<!--fim categorias-->
 	</div>
 	<!--inicio modal de excluir formulário-->
-		<!-- Modal Structure -->
-		<div id="modal1" class="modal">
+		<!-- Modal Structure --> 
+		<div id="modal1" class="modal" style="background-color: #30566B;">
 			<div class="modal-content">
-				<h6>Deseja enviar o formulário “Avaliação da capacidade funcional” para a núvem?</h6>
+				<h6 style="color: white;">Deseja enviar o formulário “Avaliação da capacidade funcional” para a núvem?</h6>
 			</div>
-			<div class="modal-footer">
-				<button class=" modal-close avanar valign-text-middle exo2-bold-white-16px" href="#!" style="margin-top: 100px; display: inline-block;
+				<div class="row" style="background-color: #30566B;">		
+					<div class="modal-footer" style="background-color: #30566B;">
+						<div class="col s5">
+				<button class=" modal-close avanar valign-text-middle exo2-bold-white-16px" href="#!" style="display: inline-block;
 				margin-left: auto;
-				margin-right: auto;">Cancelar</button>
-
-				<button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger fechar-modal modal-close" href="#modal2" style="margin-top: 100px; display: inline-block;
+				margin-right: auto; width: auto; height: auto; border-style: double; border-color: #5ABBE5; color: #5ABBE5;">Cancelar</button>
+</div>
+<div class="col s5">
+				<button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger fechar-modal modal-close" href="#modal2" style="margin-top: 0px; display: inline-block;
 				margin-left: auto;
-				margin-right: auto;">Enviar</button>
-			</div>
+				margin-right: auto; width: auto; height: auto; border-style: double; border-color: #5ABBE5; color: white; text-align: right;">Enviar</button>
+</div>		</div>	
+	</div>
 		</div>
 		<!--fim modal de excluir formulario-->
 
@@ -85,12 +104,13 @@
 		<div id="modal2" class="modal">
 			<div class="modal-content" style="background-color: #30566B;">
 				<img src="../assets/icon_confirma.png">
-				<h6 style="color: white;">Seu formulário foi enviado pra o Drive com sucesso</h6>
+				<h6 style="color: white;">O formulário “Avaliação da capacidade funcional” foi enviado com sucesso</h6>
 			</div>
-			<div class="modal-footer">
-				<button class=" avanar valign-text-middle exo2-bold-white-16px modal-close" href="#!" style="margin-top: 100px; display: inline-block;
-				margin-left: auto;
-				margin-right: auto;">Concluir</button></a>
+			<div class="modal-footer" style="background-color: #30566B;">
+				
+				<a href="#!"><button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger fechar-modal modal-close" href="#modal2" style="margin-top: 0px; display: inline-block;
+					 width: auto; height: auto; border-style: double; border-color: #5ABBE5; color: white; text-align: center; margin-bottom: 0px;">Concluir</button></a>
+			
 			</div>
 		</div>
 		<!--fim modal de confirmar exclusão-->
@@ -101,16 +121,16 @@
 		<nav class="z-depth-0 nav-menu">
 			<div class="nav-wrapper">
 				<ul class="justify">
-					<li><a href="../index.html"><img src="../assets/icon-home.png" class="img-icon" ></a></li>
-					<li><a href="../formulario.html"><img src="../assets/icon_forms.png" class="img-icon"></a></li>
-					<li><a class="active" href="#test3"><img src="../assets/icon_paciente.png" class="img-icon"></a></li>
-					<li><a href="#!"><img src="../assets/icon_ajuda.png" class="img-icon"></a></li>
-					<li><a href="#!"><img src="../assets/icon_sobre.png" class="img-icon"></a></li>
+					<li><a href="index.html"><img src="assets/icon-home.png" class="img-icon" ></a></li>
+					<li><a href="formulario.html"><img src="assets/icon_forms.png" class="img-icon"></a></li>
+					<li><a class="active" href="#test3"><img src="assets/icon_paciente.png" class="img-icon"></a></li>
+					<li><a href="ajuda.html"><img src="assets/icon_ajuda.png" class="img-icon"></a></li>
+					<li><a href="sobre.html"><img src="assets/icon_sobre.png" class="img-icon"></a></li>
 				</ul>
 			</div>
 		</nav>
 	</footer>
 </div>
-<!--fim do menu inferior-->  
+<!--fim do menu inferior-->
 <script type="text/javascript" src="../js/main.js"></script>
 </html>

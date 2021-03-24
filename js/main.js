@@ -36,3 +36,17 @@ buttonClick2.addEventListener("click",function(event){
     console.log("Tentei redirecionar!!!");
 });
 
+<<<<<<< HEAD
+=======
+//select de busca
+ document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+>>>>>>> 858cfcb6bdcee2b427b8c7d9962ad712e30ec370

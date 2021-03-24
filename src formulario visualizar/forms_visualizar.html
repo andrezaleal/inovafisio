@@ -11,49 +11,72 @@
 	<title>InovaForms</title>
 </head>
 <body>
-	<div class="row">
-		<nav id="barra-status">
-		<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn"><i class="material-icons left">chevron_left</i></a>
-		<div id="titulo">Formulários</div>
-		<div id="titulo"><h5>Visualizar</h5></div>
-		</nav>
+	<!--inicio título-->
+	<nav id="barra-status">
+		<div class="row">
+		<div class="col s1" style="display: flex; flex-direction: column; align-items: flex-start; margin-left: -10%;">
+	<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn" style="background-color: rgba(0, 0, 0, 0);"><i class="material-icons center">chevron_left</i></a>
+</div>
+<div class="col s12 center-align">
+	<div id="titulo">Formulários</div>
+</div>	
+</div>
+<div class="row">
+	<div class="col s12 center-align">
+		<div id="titulo" style="font-size: 55px;">Visualizar</div>
 	</div>
+</div>
+</nav>
+	<!--fim título-->
 	<!--inicio barra de pesquisa-->
 	<div class="container">
 		<div class="row">
+<<<<<<< HEAD
 			<div class="col s6 barra-busca">
 				<h6>Busca por área</h6>
 					<div class="input-field col s12">
 						<select id="select1">
+=======
+			<div class="col s10 barra-busca" style="border-bottom-left-radius: 20px; border-top-left-radius: 20px;">
+				<h6 style="margin-left: 5%;">Busca por área</h6>
+					<div class="input-field col s12" style="background-color: #EBF0F1;
+					border-radius: 7px; width: 90%; margin-left: 5%; height: 50px;">
+						<select>
+>>>>>>> 858cfcb6bdcee2b427b8c7d9962ad712e30ec370
 							<option value="" disabled selected>Toque para ver filtros</option>
 							<option value="1">Área</option>
 							<option value="2">Data de aplicação</option>
 							<option value="3">Local de trabalho</option>
 							<option value="4">Paciente</option>
 						</select>
-						<label>Filtros</label>
 					</div>
 			</div>
 
-			<div class="col s6 barra-busca">
-				<a class="waves-effect waves-light btn"><i class="material-icons left">search</i></a>
+			<div class="col s2 barra-busca" style="border-bottom-right-radius: 20px; border-top-right-radius: 20px;">
+				<a class="waves-effect waves-light btn"style="position:relative !important;
+				top: 85%;
+				transform: translateY(-85%); border-radius: 10px; height: 50px;"><img class="material-icons left" src="../assets/filter.svg" style="width: 200%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);"></a>
 			</div>
 		</div>
 		<!--fim barra de pesquisa-->
 		<!--inicio categorias-->
 		<div class="row">
-			<h6>Antônio Carlos da Silva</h6>
-			<div class="col s6 categorias" style="display: inline-block">
-				<h6 style="display: inline-block">BASFI- Espondilite Anquilosante</h6>
+			<h6 style="margin-top: 10%; font-size: 48px;">Antônio Carlos da Silva</h6>
+			<div class="col s12 categorias" style="display: inline-block; border-radius: 20px; margin-top: 5%; background-color: #4A96B5;">
+				<h6 style="display: inline-block;  color: white; font-size: 48px; font-family: 'Exo 2-Medium';">BASFI- Espondilite Anquilosante</h6>
 			</div>
 		</div>
 
-		<a href="forms_respostas_pelvica.html"><div class="row">
-			<h6>Dávila Fernandes</h6>
-			<div class="col s6 categorias" style="display: inline-block">
-				<h6 style="display: inline-block">Questionário de Impacto no Assoalho Pélvico</h6>
-			</div>
-		</div></a>
+		<div class="row">
+			<h6 style="margin-top: 10%; font-size: 48px;">Dávila Fernandes</h6>
+			<div class="col s12 categorias" style="display: inline-block; border-radius: 20px; margin-top: 5%; background-color: #4A96B5;">
+				<a href="forms_respostas_pelvica.html">
+				<h6 style="display: inline-block; color: white; font-size: 48px; font-family: 'Exo 2-Medium';">Questionário de Impacto no Assoalho Pélvico</h6>
+			</a></div>
+		</div>
 		<!--fim categorias-->
 	</div>
 </body>
@@ -63,16 +86,16 @@
 		<nav class="z-depth-0 nav-menu">
 			<div class="nav-wrapper">
 				<ul class="justify">
-					<li><a href="../index.html"><img src="../assets/icon-home.png" class="img-icon" ></a></li>
-					<li><a href="../formulario.html"><img src="../assets/icon_forms.png" class="img-icon"></a></li>
-					<li><a class="active" href="#test3"><img src="../assets/icon_paciente.png" class="img-icon"></a></li>
-					<li><a href="#!"><img src="../assets/icon_ajuda.png" class="img-icon"></a></li>
-					<li><a href="#!"><img src="../assets/icon_sobre.png" class="img-icon"></a></li>
+					<li><a href="index.html"><img src="assets/icon-home.png" class="img-icon" ></a></li>
+					<li><a href="formulario.html"><img src="assets/icon_forms.png" class="img-icon"></a></li>
+					<li><a class="active" href="#test3"><img src="assets/icon_paciente.png" class="img-icon"></a></li>
+					<li><a href="ajuda.html"><img src="assets/icon_ajuda.png" class="img-icon"></a></li>
+					<li><a href="sobre.html"><img src="assets/icon_sobre.png" class="img-icon"></a></li>
 				</ul>
 			</div>
 		</nav>
 	</footer>
 </div>
-<!--fim do menu inferior-->  
+<!--fim do menu inferior-->
 <script type="text/javascript" src="../js/main.js"></script>
 </html>

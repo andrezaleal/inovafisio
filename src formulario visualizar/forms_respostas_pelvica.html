@@ -11,16 +11,27 @@
 	<title>InovaForms</title>
 </head>
 <body>
-	<div class="row">
-		<nav id="barra-status">
-			<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn"><i class="material-icons left">chevron_left</i></a>
-			<div id="titulo">Formulários</div>
-			<div id="titulo"><h5>Visualizar</h5></div>
-		</nav>
+	<!--inicio título-->
+	<nav id="barra-status">
+		<div class="row">
+		<div class="col s1" style="display: flex; flex-direction: column; align-items: flex-start; margin-left: -10%;">
+	<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn" style="background-color: rgba(0, 0, 0, 0);"><i class="material-icons center">chevron_left</i></a>
+</div>
+<div class="col s12 center-align">
+	<div id="titulo">Formulários</div>
+</div>	
+</div>
+<div class="row">
+	<div class="col s12 center-align">
+		<div id="titulo" style="font-size: 55px;">Visualizar</div>
 	</div>
+</div>
+</nav>
+	<!--fim título-->
+	<div class="container">
 	<div class="row">
 		<div class="col s12">
-			<h6>Questionário de Impacto no Assoalho Pélvico</h6>
+			<h2 style="color: #30566B; margin-top: 2%; margin-bottom: 5%;">Questionário de Impacto no Assoalho Pélvico</h2>
 			<div class="row linha">
 				<div class="col s6 center-align">
 					<button class="button-verde" id="meubotao1">Respostas</button>
@@ -31,12 +42,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="row">
 
-			<div class="col s12">
-				<h2 style="color: #30566B; margin-top: 0px; margin-bottom: 0px;">Questionário de Impacto no Assoalho Pélvico</h2>
-			</div>
+		<div class="row">
 
 			<div class="col s12">
 				<h6 style="font-size: 40px; color: #323B43; margin-bottom: 16px;">Condições ou sintomas que afetam o paciente em relação a:</h6>
@@ -71,7 +78,7 @@
 			<div class="col s12">
 				<button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger" href="#modal1" style="margin-top: 100px; display: inline-block;
 				margin-left: auto;
-				margin-right: auto;">Excluir questionário</button>
+				margin-right: auto; border-style:double; border-color: #30566B; background-color: white; color: #30566B;">Excluir questionário</button>
 
 				<a href="forms_editar_respostas.html" ><button  class="avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 100px; display: inline-block;
 				margin-left: auto;
@@ -81,37 +88,42 @@
 	</div>
 
 	<!--inicio modal de excluir formulário-->
-	<!-- Modal Structure -->
-	<div id="modal1" class="modal">
-		<div class="modal-content">
-			<h6>Deseja excluir o formulário “Questionário de Impacto no Assoalho Pélvico”?</h6>
-		</div>
-		<div class="modal-footer">
-			<button class=" modal-close avanar valign-text-middle exo2-bold-white-16px" href="#!" style="margin-top: 100px; display: inline-block;
-			margin-left: auto;
-			margin-right: auto;">Cancelar</button>
-
-			<button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger fechar-modal modal-close" href="#modal2" style="margin-top: 100px; display: inline-block;
-			margin-left: auto;
-			margin-right: auto;">Excluir</button>
-		</div>
+		<!-- Modal Structure --> 
+		<div id="modal1" class="modal" style="background-color: #30566B;">
+			<div class="modal-content">
+				<h6 style="color: white;">Deseja excluir o formulário “Questionário de Impacto no Assoalho Pélvico”?</h6>
+			</div>
+				<div class="row" style="background-color: #30566B;">		
+					<div class="modal-footer" style="background-color: #30566B;">
+						<div class="col s5">
+				<button class=" modal-close avanar valign-text-middle exo2-bold-white-16px" href="#!" style="display: inline-block;
+				margin-left: auto;
+				margin-right: auto; width: auto; height: auto; border-style: double; border-color: #5ABBE5; color: #5ABBE5;">Cancelar</button>
+</div>
+<div class="col s5">
+				<button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger fechar-modal modal-close" href="#modal2" style="margin-top: 0px; display: inline-block;
+				margin-left: auto;
+				margin-right: auto; width: auto; height: auto; border-style: double; border-color: #5ABBE5; color: white; text-align: right;">Excluir</button>
+</div>		</div>	
 	</div>
-	<!--fim modal de excluir formulario-->
+		</div>
+		<!--fim modal de excluir formulario-->
 
-	<!--inicio modal de confirmar exclusão-->
-	<!-- Modal Structure -->
-	<div id="modal2" class="modal">
-		<div class="modal-content" style="background-color: #30566B;">
-			<img src="../assets/icon_confirma.png">
-			<h6 style="color: white;">O formulário “Questionário de Impacto no Assoalho Pélvico” foi excluído com sucesso</h6>
+		<!--inicio modal de confirmar exclusão-->
+		<!-- Modal Structure -->
+		<div id="modal2" class="modal">
+			<div class="modal-content" style="background-color: #30566B;">
+				<img src="../assets/icon_confirma.png">
+				<h6 style="color: white;">O formulário “Questionário de Impacto no Assoalho Pélvico” foi excluído com sucesso</h6>
+			</div>
+			<div class="modal-footer" style="background-color: #30566B;">
+				
+				<a href="../src formulario visualizar/forms_visualizar.html"><button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger fechar-modal modal-close" href="#modal2" style="margin-top: 0px; display: inline-block;
+					 width: auto; height: auto; border-style: double; border-color: #5ABBE5; color: white; text-align: center; margin-bottom: 0px;">Concluir</button></a>
+			
+			</div>
 		</div>
-		<div class="modal-footer">
-			<a href="forms_visualizar.html"><button class=" avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 100px; display: inline-block;
-			margin-left: auto;
-			margin-right: auto;">Concluir</button></a>
-		</div>
-	</div>
-	<!--fim modal de confirmar exclusão-->
+		<!--fim modal de confirmar exclusão-->
 
 </body>
 <!--inicio do menu inferior-->
@@ -120,16 +132,16 @@
 		<nav class="z-depth-0 nav-menu">
 			<div class="nav-wrapper">
 				<ul class="justify">
-					<li><a href="../index.html"><img src="../assets/icon-home.png" class="img-icon" ></a></li>
-					<li><a href="../formulario.html"><img src="../assets/icon_forms.png" class="img-icon"></a></li>
-					<li><a class="active" href="#test3"><img src="../assets/icon_paciente.png" class="img-icon"></a></li>
-					<li><a href="#!"><img src="../assets/icon_ajuda.png" class="img-icon"></a></li>
-					<li><a href="#!"><img src="../assets/icon_sobre.png" class="img-icon"></a></li>
+					<li><a href="index.html"><img src="assets/icon-home.png" class="img-icon" ></a></li>
+					<li><a href="formulario.html"><img src="assets/icon_forms.png" class="img-icon"></a></li>
+					<li><a class="active" href="#test3"><img src="assets/icon_paciente.png" class="img-icon"></a></li>
+					<li><a href="ajuda.html"><img src="assets/icon_ajuda.png" class="img-icon"></a></li>
+					<li><a href="sobre.html"><img src="assets/icon_sobre.png" class="img-icon"></a></li>
 				</ul>
 			</div>
 		</nav>
 	</footer>
 </div>
-<!--fim do menu inferior-->  
+<!--fim do menu inferior-->
 <script type="text/javascript" src="../js/main.js"></script>
 </html>
