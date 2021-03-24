@@ -11,11 +11,18 @@
 	<title>InovaForms</title>
 </head>
 <body>
-		<nav id="barra-status">
-		<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn"><i class="material-icons left">chevron_left</i></a> 
-		<div id="titulo">Pacientes</div>
-		</nav>
-
+		<!--inicio título-->
+	<nav id="barra-status">
+		<div class="row">
+		<div class="col s1" style="display: flex; flex-direction: column; align-items: flex-start; margin-left: -10%;">
+	<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn" style="background-color: rgba(0, 0, 0, 0);"><i class="material-icons center">chevron_left</i></a>
+</div>
+<div class="col s12 center-align">
+	<div id="titulo">Pacientes</div>
+</div>	
+</div>
+</nav>
+	<!--fim título-->
 	<!--inicio do menu inferior-->
 	<div class="footer-fixed">
 		<footer >
@@ -78,13 +85,13 @@
 	  		</div>
 	  	</div>
 
-	  	<a href="pacientes_visualizar.html"><div class="row">
+	  <div class="row">
 	  		<div class="col s12 categorias" style="display: inline-block; border-radius: 20px; margin-top: 5%; background-color: #50A5C8;">
-	  			<h6 style="display: inline-block; margin-left: 5%; padding: 0px; position:relative !important;
+	  			<a href="pacientes_visualizar.html">	<h6 style="display: inline-block; margin-left: 5%; padding: 0px; position:relative !important;
 	  			top: 40%;
 	  			transform: translateY(-40%); font-size: 50px; color:white;">Dávila Fernandes</h6>
-	  		</div>
-	  	</div></a>
+	  	</a>	</div>
+	  	</div>
 
 	  	<div class="row">
 	  		<div class="col s12 categorias" style="display: inline-block; border-radius: 20px; margin-top: 5%; background-color: #4A96B5;">
