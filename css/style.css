@@ -549,6 +549,14 @@ button:focus{
 	height: 175px;
 	width: 90%;
   }
+  .rectangle-13 {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	background-color: rgba(235, 240, 241, 1);
+	border-radius: 7px;
+	height: 75px;
+	width: 100%;
+  }
   .bexiga {
 	letter-spacing: 0px;
 	min-height: 16px;
@@ -603,3 +611,19 @@ button:focus{
 	transform: translateY(-50%); 
 	
   }
+.div-select{
+	width: 250px;
+	overflow:hidden;
+}
+.div-select select {      
+	background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-select.gif) no-repeat #354880; 
+	background-position: 205px center; 
+	width: 100%; 
+	height:100%; 
+	font-family: 'Exo 2-Regular'; 
+	font-size:18px;
+	padding:13px 20px 13px 12px;
+	color:#fff;
+	text-indent: 0.01px;
+	text-overflow: "";  
+} 
