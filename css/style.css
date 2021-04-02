@@ -627,3 +627,13 @@ button:focus{
 	text-indent: 0.01px;
 	text-overflow: "";  
 } 
+.wall{
+	display: none;
+	width: 100%;
+	height: 100%;
+  }
+   
+
+  .wall:target{
+	display: block;
+  }
