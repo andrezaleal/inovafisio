@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" href="imgs/favicon.png" type="image/x-icon" />
-	<script src="js/jquery-3.5.0.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/main.js"></script>
-	<script  src="js/main.js"></script>
-	<meta charset="utf-8">
-	<title>InovaForms</title>
+    <link rel="icon" href="imgs/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/main.js"></script>
+    <script  src="js/main.js"></script>
+    <meta charset="utf-8">
+    <title>InovaForms</title>
 </head>
 <body>
 
@@ -77,12 +77,13 @@
             <div class="col s12" style="margin-top: 5%;">
                 <input class="rectangle-13" type="password" name="confirm_senha" placeholder="********" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
             </div> 
-        </form> 
-            <div class="col s12">
+             <div class="col s12">
     
                 <a href="cadastro2.html" ><button class="avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 15%; display: block;
                   margin-left: auto;
                   margin-right: auto;">Avançar</button></a>
             </div>
+        </form> 
+           
     </div>
     </body>
