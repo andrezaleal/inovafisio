@@ -6871,8 +6871,8 @@ textarea.materialize-textarea {
   position: absolute;
   top: 0;
   left: 0;
-  width: 18px;
-  height: 18px;
+  width: 35px;
+  height: 35px;
   z-index: 0;
   border: 2px solid #5a5a5a;
   border-radius: 1px;
@@ -6975,8 +6975,8 @@ textarea.materialize-textarea {
 }
 
 [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
-  height: 20px;
-  width: 20px;
+  height: 35px;
+  width: 35px;
   background-color: transparent;
   border: 2px solid #5a5a5a;
   top: 0px;
@@ -6986,8 +6986,8 @@ textarea.materialize-textarea {
 [type="checkbox"].filled-in:checked + span:not(.lever):before {
   top: 0;
   left: 1px;
-  width: 8px;
-  height: 13px;
+  width: 35px;
+  height: 35px;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
   border-right: 2px solid #fff;
@@ -7000,8 +7000,8 @@ textarea.materialize-textarea {
 
 [type="checkbox"].filled-in:checked + span:not(.lever):after {
   top: 0;
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   border: 2px solid #26a69a;
   background-color: #26a69a;
   z-index: 0;
@@ -8486,10 +8486,19 @@ input[type=range]::-ms-thumb {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8542,10 +8551,19 @@ input[type=range]::-ms-thumb {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s;
-  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s,
+ -webkit-transform .3s;
   z-index: -1;
 }
 

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="imgs/favicon.png" type="image/x-icon" />
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="js/main.js"></script>
+	<script  src="js/main.js"></script>
+	<meta charset="utf-8">
+	<title>InovaForms</title>
+</head>
+<body>
+	<!--inicio título-->
+	<nav id="barra-status">
+		<div class="row">
+		<div class="col s1" style="display: flex; flex-direction: column; align-items: flex-start; margin-left: -10%;">
+	<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn" style="background-color: rgba(0, 0, 0, 0);"><i class="material-icons center">chevron_left</i></a>
+</div>
+<div class="col s12 center-align">
+	<div id="titulo">Formulários</div>
+</div>	
+</div>
+<div class="row">
+	<div class="col s12 center-align">
+		<div id="titulo" style="font-size: 55px;">Aplicar</div>
+	</div>
+</div>
+</nav>
+	<!--fim título-->
+
+    	<!--início pacientes-->
+
+    <div class="wall wall-1" id="wall-1">
+        <div class="container">
+    <div class="row">
+        <h7 style="font-size: 35px; font-family: 'Exo 2-Semi'; color: #30566B;">Escolha um dos pacientes ja cadastrados e selecione o local de atuação no qual irá aplicar esse questionário. Caso não tenha o cadastro do paciente, vá na aba “Cadastrar”.</h7> 
+    </div>
+    <div class="row linha" id="botoes" style="margin-top: 8%;">
+        <div class="col s6 center-align">
+            <button id="meubotao1" class="button-verde" onclick='window.location = "#wall-1"';>Pacientes</button>
+        </div>
+        <div class="col s6 center-align">
+            <button id="meubotao2" class="button-cinza" onclick='window.location = "#wall-2"';>Cadastrar</button>
+        </div>
+    </div>
+</div>
+</div>
+
+    	<!--fim pacientes-->
+    	<!--início cadastro-->
+
+<div class="wall wall-2" id="wall-2">
+    <div class="container">
+<div class="row">
+    <h7 style="font-size: 35px; font-family: 'Exo 2-Semi'; color: #30566B;">Cadastre um novo paciente para ser realizado o formulário</h7> 
+</div>
+<div class="row linha" id="botoes" style="margin-top: 8%;">
+    <div class="col s6 center-align">
+        <button id="meubotao1" class="button-cinza" href="#wall-1"  onclick='window.location = "#wall-1"';>Pacientes</button>
+    </div>
+    <div class="col s6 center-align">
+        <button id="meubotao2" class="button-verde" href="#wall-2">Cadastrar</button>
+    </div>
+</div>
+<label class="bexiga exo2-semi-bold-tuna-16px">Cadastrar Novo Paciente</label>
+<form>
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Nome Completo do Paciente</label>
+    </div>
+
+    <div class="col s12" style="margin-top: 5%;">
+        <input class="rectangle-13" placeholder="Fulano Sicrano da Silva" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div>
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Data de Nascimento</label>
+    </div>
+
+    <div class="col s12" style="margin-top: 5%;">
+        <input class="rectangle-13" type="date" placeholder="23/12/2000" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div> 
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Profissão</label>
+    </div>
+
+    <div class="col s12" style="margin-top: 5%;">
+        <input class="rectangle-13" placeholder="" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div>
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Etnia</label>
+    </div>
+
+    <div class="input-field col s12" style="margin-top: 5%;">
+        <input class="rectangle-13" placeholder="" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div>
+
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Naturalidade</label>
+    </div>
+
+    <div class="input-field col s12" style="margin-top: 5%;">
+        <input class="rectangle-13" placeholder="" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div>
+
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Sexo</label>
+    </div>
+
+    <div class="input-field col s12" style="margin-top: 5%;">
+        <input class="rectangle-13" placeholder="" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div>
+
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Estado Civil</label>
+    </div>
+
+    <div class="input-field col s12" style="margin-top: 5%;">
+        <input class="rectangle-13" placeholder="" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div>
+
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Grau de Instrução</label>
+    </div>
+
+    <div class="input-field col s12" style="margin-top: 5%;">
+        <input class="rectangle-13" placeholder="" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div>
+
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Motivo do Atendimento</label>
+    </div>
+
+    <div class="input-field col s12" style="margin-top: 5%;">
+        <textarea class="rectangle-13" placeholder="" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; height: 140px;"></textarea>
+    </div>
+
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Data do Ocorrido</label>
+    </div>
+
+    <div class="input-field col s12" style="margin-top: 5%;">
+        <input class="rectangle-13" type="date" placeholder="" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div>
+
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Tempo de doença</label>
+    </div>
+
+    <div class="input-field col s12" style="margin-top: 5%;">
+        <input class="rectangle-13"  placeholder="" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div>
+
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Regiões mais acometidas</label>
+    </div>
+
+    <div class="input-field col s12" style="margin-top: 5%;">
+        <input class="rectangle-13"  placeholder="" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div>
+
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Realizou procedimento cirúrgico? Se sim, qual?</label>
+    </div>
+
+    <div class="input-field col s12" style="margin-top: 5%;">
+        <input class="rectangle-13"  placeholder="" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div>
+    <div class="col s12" style="margin-top: 5%;">
+        <label class="bexiga exo2-semi-bold-tuna-16px">Quais remédios faz uso frequentemente?</label>
+    </div>
+
+    <div class="input-field col s12" style="margin-top: 5%;">
+        <input class="rectangle-13"  placeholder="" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+    </div>
+</form>
+<div class="row">
+    <div class="col s6">
+        <button class="avanar valign-text-middle exo2-bold-white-16px modal-trigger" onclick='window.location = "#wall-1"'; style="margin-top: 30%; background-color: white; color: #30566B; border-style: double; border-color: #30566B;">Cancelar Cadastro</button>
+    </div>
+    <div class="col s6">
+        <button class="avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 30%;">Cadastrar</button>
+    </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+    	<!--fim cadastro-->
+
+    </body>
+    <script>window.location = "#wall-1";</script>
+
+
+    </html>
