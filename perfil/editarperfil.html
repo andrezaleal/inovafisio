@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="imgs/favicon.png" type="image/x-icon" />
+	<script src="../js/jquery-3.5.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<meta charset="utf-8">
+	<title>InovaForms</title>
+</head>
+<body>
+	<!--inicio título-->
+	<nav id="barra-status">
+		<div class="row">
+		<div class="col s1" style="display: flex; flex-direction: column; align-items: flex-start; margin-left: -10%;">
+	<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn" style="background-color: rgba(0, 0, 0, 0);"><i class="material-icons center">chevron_left</i></a>
+</div>
+<div class="col s12 center-align">
+	<div id="titulo">Perfil Pessoal</div>
+</div>	
+</div>
+
+</nav>
+	<!--fim título-->
+
+	<div class="container">
+		<div class="row">
+	      <div class="col s4">
+			<img class="imagens responsive-img left-align" id="fotopessoa" src="../assets/perfilalterar.png" style="width: 100%; height: auto;">
+			      </div>
+	      <div class="col s4 ">
+	      	<nav id="barrinha">
+			</nav>
+	      </div>
+	      <div class="col s4" style="margin-top: 5%;">
+	      	<h7 class="pessoa" style="font-size: 40px; text-align: left;">João Henrique</h7>
+	      	<h7 class="pessoa" style="font-size: 36px;">22/06/1990</h7>
+	      </div>
+	  </div>
+	
+
+
+
+	<div class="row" style="margin-top: 10%;">
+		<div class="col s12 ">
+			<p style="font-size: 40px; font-family: 'Exo 2-Regular'; color: #323B43; margin-top: 5%;"><b style="font-size: 35px; color: #323B43; margin-bottom: 16px; font-style: bold;
+				font-family: 'Exo 2-Semi';
+				text-align: left;
+				padding: 24px 0;">Nome Completo:</b></p>
+			<input type="text" value="AAAAA" style="font-family: 'Exo 2-Regular'; font-size: 40px; color: #30566B; margin-top: 3%;"   > 
+		</div>
+
+		<div class="col s6 ">
+			<p style="font-size: 40px; font-family: 'Exo 2-Regular'; color: #323B43; margin-top: 5%;"><b style="font-size: 35px; color: #323B43; margin-bottom: 16px; font-style: bold;
+				font-family: 'Exo 2-Semi';
+				text-align: left;
+				padding: 24px 0;">Data de nascimento:</b></p>
+			<input type="text" value="22/06/1990"  style="font-family: 'Exo 2-Regular'; font-size: 40px; color: #30566B; margin-top: 3%;"   >
+		</div>
+
+		<div class="col s12 ">
+			<p style="font-size: 40px; font-family: 'Exo 2-Regular'; color: #323B43; margin-top: 5%;"><b style="font-size: 35px; color: #323B43; margin-bottom: 16px; font-style: bold;
+				font-family: 'Exo 2-Semi';
+				text-align: left;
+				padding: 24px 0;">Ocupação:</b></p>
+			<input type="text" value="Profissional"  style="font-family: 'Exo 2-Regular'; font-size: 40px; color: #30566B; margin-top: 3%;"   >
+		</div>
+	</div>
+
+	<div class="col s12 ">
+		<p style="font-size: 40px; font-family: 'Exo 2-Regular'; color: #323B43; margin-top: 5%;"><b style="font-size: 35px; color: #323B43; margin-bottom: 16px; font-style: bold;
+			font-family: 'Exo 2-Semi';
+			text-align: left;
+			padding: 24px 0;">Local(is) de Trabalho:</b></p>
+		<input type="text" value="Universidade Federal do Ceará"  style="font-family: 'Exo 2-Regular'; font-size: 40px; color: #30566B; margin-top: 3%;"   >
+	</div>
+	<div class="col s12 ">
+		<p style="font-size: 40px; font-family: 'Exo 2-Regular'; color: #323B43; margin-top: 5%;"><b style="font-size: 35px; color: #323B43; margin-bottom: 16px; font-style: bold;
+			font-family: 'Exo 2-Semi';
+			text-align: left;
+			padding: 24px 0;">E-mail:</b></p>
+		<input type="text" value="fulano@gmail.com"  style="font-family: 'Exo 2-Regular'; font-size: 40px; color: #30566B; margin-top: 3%;"   >
+	</div>
+	<div class="col s12 ">
+		<p style="font-size: 40px; font-family: 'Exo 2-Regular'; color: #323B43; margin-top: 5%;"><b style="font-size: 35px; color: #323B43; margin-bottom: 16px; font-style: bold;
+			font-family: 'Exo 2-Semi';
+			text-align: left;
+			padding: 24px 0;">Senha</b></p>
+		<input type="text" value="******"  style="font-family: 'Exo 2-Regular'; font-size: 40px; color: #30566B; margin-top: 3%;"   >
+	</div>
+
+
+
+
+	<div class="col s12" style="margin-top: 10%;">
+
+		<button class="avanar valign-text-middle exo2-bold-white-16px modal-trigger" onclick="window.location='perfil.html'" style="margin-top: 100px; display: inline-block;
+		margin-left: auto;
+		margin-right: auto; background: white; color: #30566B; border-color: #30566B; border-style: double;">Cancelar</button>
+		<button class="avanar valign-text-middle exo2-bold-white-16px modal-trigger" style="margin-top: 100px; display: inline-block;
+		margin-left: auto;
+		margin-right: auto;" href="#modal1">Salvar Alterações</button>
+
+	</div>
+</div>
+<!--inicio modal de excluir formulário-->
+		<!-- Modal Structure --> 
+		<div id="modal1" class="modal" style="background-color: #30566B;">
+			<div class="modal-content">
+				<h6 style="color: white;">Deseja salvar as alterações realizadas?</h6>
+			</div>
+				<div class="row" style="background-color: #30566B;">		
+					<div class="modal-footer" style="background-color: #30566B;">
+						<div class="col s5">
+				<button class=" modal-close avanar valign-text-middle exo2-bold-white-16px" href="#!" style="display: inline-block;
+				margin-left: auto;
+				margin-right: auto; width: auto; height: auto; border-style: double; border-color: #5ABBE5; color: #5ABBE5;">Cancelar</button>
+</div>
+<div class="col s5">
+				<button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger fechar-modal modal-close" href="#modal2" style="margin-top: 0px; display: inline-block;
+				margin-left: auto;
+				margin-right: auto; width: auto; height: auto; border-style: double; border-color: #5ABBE5; color: white; text-align: right;">Alterar</button>
+</div>		</div>	
+	</div>
+		</div>
+		<!--fim modal de excluir formulario-->
+
+		<!--inicio modal de confirmar exclusão-->
+		<!-- Modal Structure -->
+		<div id="modal2" class="modal">
+			<div class="modal-content" style="background-color: #30566B;">
+				<img src="../assets/icon_confirma.png">
+				<h6 style="color: white;">Os seus dados foram alterados com sucesso.</h6>
+			</div>
+			<div class="modal-footer" style="background-color: #30566B;">
+				
+				<a href="perfil.html"><button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger fechar-modal modal-close" style="margin-top: 0px; display: inline-block;
+					 width: auto; height: auto; border-style: double; border-color: #5ABBE5; color: white; text-align: center; margin-bottom: 0px;">Concluir</button></a>
+			
+			</div>
+		</div>
+		<!--fim modal de confirmar exclusão-->
+
+</body>
+<!--inicio do menu inferior-->
+<div class="footer-fixed">
+	<footer >
+		<nav class="z-depth-0 nav-menu">
+			<div class="nav-wrapper">
+				<ul class="justify">
+					<li><a href="../index.html"><img src="../assets/icon-home.png" class="img-icon" ></a></li>
+					<li><a href="../formulario.html"><img src="../assets/icon_forms.png" class="img-icon"></a></li>
+					<li><a class="active" href="pacientes.html"><img src="../assets/icon_paciente.png" class="img-icon"></a></li>
+					<li><a href="../ajuda.html"><img src="../assets/icon_ajuda.png" class="img-icon"></a></li>
+					<li><a href="../sobre.html"><img src="../assets/icon_sobre.png" class="img-icon"></a></li>
+				</ul>
+			</div>
+		</nav>
+	</footer>
+</div>
+<!--fim do menu inferior-->  
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript">
+	let buttonClick3 = document.getElementById('meubotao3'); //O botao criado deve ter o campo id="meubotao"
+	let buttonClick4 = document.getElementById('meubotao4');
+
+	console.log(buttonClick3);
+	buttonClick3.addEventListener("click",function(event){
+	    window.location.href = "perfil/perfil.html";
+	    console.log("Tentei redirecionar!!!");
+	});
+	console.log(buttonClick4);
+	buttonClick4.addEventListener("click",function(event){
+	    window.location.href = "perfil/editarperfil.html";
+	    console.log("Tentei redirecionar!!!");
+	});
+</script>
+</html>
