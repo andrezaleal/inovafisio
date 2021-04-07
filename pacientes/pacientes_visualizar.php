@@ -55,39 +55,57 @@
 	  		</div>
 	  	</div>
 	 </div>
-
+	 <?php
+           include_once("../conexao.php");
+           $result_pacientes = "SELECT * FROM tb_paciente";
+           if ($resultado_pacientes = mysqli_query($conn, $result_pacientes)) {
+               $nomePaciente = array(); 
+               $data_nascimento = array();
+               $naturalidade = array();
+               $i = 0; 
+               while ($row_paciente = mysqli_fetch_assoc($resultado_pacientes)) {
+                   $nomePaciente[$i] = $row_paciente['nome'];
+                   $data_nascimento[$i] = (new DateTime($row_paciente['data_nascimento']))->format('d/m/Y');
+                   $naturalidade[$i] = $row_paciente['naturalidade'];
+        ?>
 	<div class="row" style="margin-top: 10%;">
 		<div class="col s12 ">
 			<p style="font-size: 40px; font-family: 'Exo 2-Regular'; color: #323B43; margin-top: 5%;"><b style="font-size: 35px; color: #323B43; margin-bottom: 16px; font-style: bold;
 				font-family: 'Exo 2-Semi';
 				text-align: left;
 				padding: 24px 0;">Paciente:</b></p>
-			<input type="text" value="Davila Fernandes" style="font-size: 40px;" disabled>
+			<input type="text" value="<?php echo $nomePaciente[$i];?>" style="font-size: 40px;" disabled>
 		</div>
 
 		<div class="col s6 ">
 			<p style="font-size: 40px; font-family: 'Exo 2-Regular'; color: #323B43; margin-top: 5%;"><b style="font-size: 35px; color: #323B43; margin-bottom: 16px; font-style: bold;
 				font-family: 'Exo 2-Semi';
 				text-align: left;
-				padding: 24px 0;">Data de nascimento:</b></p>
-			<input type="text" value="22/06/1990"  style="font-size: 40px;" disabled>
+				padding: 24px 0;">Data de Nascimento:</b></p>
+			<input type="text" value="<?php echo $data_nascimento[$i]; ?>"  style="font-size: 40px;" disabled>
 		</div>
 
 		<div class="col s12 ">
 			<p style="font-size: 40px; font-family: 'Exo 2-Regular'; color: #323B43; margin-top: 5%;"><b style="font-size: 35px; color: #323B43; margin-bottom: 16px; font-style: bold;
 				font-family: 'Exo 2-Semi';
 				text-align: left;
-				padding: 24px 0;">Cidade:</b></p>
-			<input type="text" value="Fortaleza"  style="font-size: 40px;" disabled>
+				padding: 24px 0;">Naturalidade:</b></p>
+			<input type="text" value="<?php echo $naturalidade[$i];?>"  style="font-size: 40px;" disabled>
 		</div>
 	</div>
-
+ <?php
+              $i++;
+               }
+           }
+           ?>  
+         <?php  
+        ?>
 	<div class="col s12" style="margin-top: 10%;">
 
 		<button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger" href="#modal1" style="margin-top: 100px; display: inline-block;
 		margin-left: auto;
 		margin-right: auto;">Excluir paciente</button>
-		<a href="pacientes_editar.html"><button class="  avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 100px; display: inline-block;
+		<a href="pacientes_editar.php"><button class="  avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 100px; display: inline-block;
 		margin-left: auto;
 		margin-right: auto;">Editar dados</button></a>
 
@@ -156,7 +174,7 @@
 
 	console.log(buttonClick3);
 	buttonClick3.addEventListener("click",function(event){
-	    window.location.href = "../pacientes/pacientes_visualizar.html";
+	    window.location.href = "../pacientes/pacientes_visualizar.php";
 	    console.log("Tentei redirecionar!!!");
 	});
 	console.log(buttonClick4);

@@ -13,14 +13,14 @@ $local_trabalho = filter_input(INPUT_POST, 'local_trabalho', FILTER_SANITIZE_STR
 
 echo $ocupacao;
 
-
  $result_usuario = "INSERT INTO tb_cad_usuario(nome, data_nascimento, email, senha, confirm_senha, cpf, ocupacao, local_trabalho) VALUES ('$nome', '$data_nascimento', '$email', '$senha', '$confirm_senha', '$cpf', '$ocupacao', '$local_trabalho')";
+
+ $result_login = "INSERT INTO tb_login( email, senha) VALUES ('$email', '$senha')";
+
  $resultado_usuario = mysqli_query($conn, $result_usuario);
-
- if($confirm_senha != null){
-      header('Location: cadastro2.php');
-        }
-
-//validação de login
-        
+ $resultado_login = mysqli_query($conn, $result_login);
+ $linhas = mysqli_affected_rows($conn);
+    
+    echo "$linhas linhas afetadas";
+                                
 ?>

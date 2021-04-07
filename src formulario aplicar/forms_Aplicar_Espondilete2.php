@@ -32,7 +32,7 @@
 		<!--fim título-->
 	<div class="container">
 		<div class="row">
-
+			<form method="POST">
 			<div class="col s12">
 				<h6 style="font-size: 35px;">BASFI- Espondilite Anquilosante</h6>
 			</div>
@@ -43,7 +43,7 @@
 			<div class="col s12" >
 				<div class="range-wrap">
 					<output class="bubble"></output>
-					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" class="range" min="0" max="10" style="font-size:25px"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
+					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" name="questao1" class="range" min="0" max="10" style="font-size:25px"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
 				</div>
 			</div>
 
@@ -53,7 +53,7 @@
 			<div class="col s12" >
 				<div class="range-wrap">
 					<output class="bubble"></output>
-					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" class="range" min="0" max="10" style="font-size:25px"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
+					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" name="questao2" class="range" min="0" max="10" style="font-size:25px"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
 				</div>
 			</div>
 
@@ -63,7 +63,7 @@
 			<div class="col s12" >
 				<div class="range-wrap">
 					<output class="bubble"></output>
-					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" class="range" min="0" max="10" style="font-size:25px"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
+					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" name="questao3" class="range" min="0" max="10" style="font-size:25px"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
 				</div>
 			</div>
 
@@ -73,7 +73,7 @@
 			<div class="col s12" >
 				<div class="range-wrap">
 					<output class="bubble"></output>
-					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" class="range" min="0" max="10" style="font-size:25px"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
+					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" name="questao4" class="range" min="0" max="10" style="font-size:25px"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
 				</div>
 			</div>
 
@@ -83,7 +83,7 @@
 			<div class="col s12" >
 				<div class="range-wrap">
 					<output class="bubble"></output>
-					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" class="range" min="0" max="10" style="font-size:25px"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
+					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" name="questao5" class="range" min="0" max="10" style="font-size:25px"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
 				</div>
 			</div>
 
@@ -93,7 +93,7 @@
 			<div class="col s12" >
 				<div class="range-wrap">
 					<output class="bubble"></output>
-					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" class="range" min="0" max="10" style="font-size:50px; size: 50px;"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
+					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" name="questao6" class="range" min="0" max="10" style="font-size:50px; size: 50px;"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
 				</div>
 			</div>
 
@@ -103,7 +103,7 @@
 			<div class="col s12" >
 				<div class="range-wrap">
 					<output class="bubble"></output>
-					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" class="range" min="0" max="10"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
+					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" name="questao7" class="range" min="0" max="10"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
 				</div>
 			</div>
 
@@ -113,7 +113,7 @@
 			<div class="col s12" >
 				<div class="range-wrap">
 					<output class="bubble"></output>
-					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" class="range" min="0" max="10"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
+					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" name="questao8" class="range" min="0" max="10"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
 				</div>
 			</div>
 
@@ -123,7 +123,7 @@
 			<div class="col s12" >
 				<div class="range-wrap">
 					<output class="bubble"></output>
-					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" class="range" min="0" max="10"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
+					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" class="range" name="questao9" min="0" max="10"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
 				</div>
 			</div>
 
@@ -133,7 +133,7 @@
 			<div class="col s12" >
 				<div class="range-wrap">
 					<output class="bubble"></output>
-					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" class="range" min="0" max="10"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
+					<label style="font-size:25px">0</label><label style="left: 95%;position: relative; font-size:25px">10</label><input type="range" class="range" name="questao10" min="0" max="10"><label style="font-size: 25px;">Fácil</label><label  style="left: 82%;position: relative; font-size: 25px;">Impossível</label>
 				</div>
 			</div>
 
@@ -149,7 +149,7 @@
 					margin-right: auto; margin-top: 14%;">Avançar</button></a>
 			</div>
 	  </div>
-
+	</form>
 	</div>
 
 	  
@@ -192,6 +192,24 @@
 		</nav>
 	</footer>
 </div>
+<?php
+include_once("../conexao.php");
+$questao1 = $_POST['questao1'];
+$questao2 = $_POST['questao2'];
+$questao3 = $_POST['questao3'];
+$questao4 = $_POST['questao4'];
+$questao5 = $_POST['questao5'];
+$questao6 = $_POST['questao6'];
+$questao7 = $_POST['questao7'];
+$questao8 = $_POST['questao8'];
+$questao9 = $_POST['questao9'];
+$questao10 = $_POST['questao10'];
+
+$result_questionario = "INSERT INTO tb_questionario_espondilete(questao1, questao2, questao3, questao4, questao5, questao6, questao7, questao8, questao9, questao10) VALUES ('$questao1', '$questao2', '$questao3', '$questao4', '$questao5', '$questao6', '$questao7', '$questao8', '$questao9', '$questao10')";
+ $resultado_questionario = mysqli_query($conn, $result_questionario);
+ $linhas = mysqli_affected_rows($conn);
+echo "$linhas linhas afetadas";
+?>
 <!--fim do menu inferior-->
 </body>
 </html>

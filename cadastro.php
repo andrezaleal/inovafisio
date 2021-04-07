@@ -47,39 +47,64 @@
             </div>
     
             <div class="col s12" style="margin-top: 5%;">
-                <input class="rectangle-13" placeholder="Fulano Sicrano da Silva" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; " name="nome" type="text"></input>
+                <input class="rectangle-13" placeholder="Fulano Sicrano da Silva" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; " name="nome" type="text" required></input>
             </div>
             <div class="col s12" style="margin-top: 5%;">
                 <label class="bexiga exo2-semi-bold-tuna-16px">Data de Nascimento</label>
             </div>
     
             <div class="col s12" style="margin-top: 5%;">
-                <input class="rectangle-13" type="date" name="data_nascimento" placeholder="23/12/2000" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+                <input class="rectangle-13" type="date" name="data_nascimento" placeholder="23/12/2000" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; " required ></input>
             </div> 
             <div class="col s12" style="margin-top: 5%;">
                 <label class="bexiga exo2-semi-bold-tuna-16px">Email</label>
             </div>
     
             <div class="col s12" style="margin-top: 5%;">
-                <input class="rectangle-13" type="email" name="email" placeholder="DrHenrique@gmail.com" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+                <input class="rectangle-13" type="email" name="email" placeholder="DrHenrique@gmail.com" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; " required></input>
             </div>
             <div class="col s12" style="margin-top: 5%;">
                 <label class="bexiga exo2-semi-bold-tuna-16px">Senha</label>
             </div>
     
             <div class="col s12" style="margin-top: 5%;">
-                <input class="rectangle-13" type="password" name="senha" placeholder="********" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+                <input class="rectangle-13" type="password" name="senha" placeholder="********" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; " required></input>
             </div> 
             <div class="col s12" style="margin-top: 5%;">
                 <label class="bexiga exo2-semi-bold-tuna-16px">Confirmar Senha</label>
             </div>
     
             <div class="col s12" style="margin-top: 5%;">
-                <input class="rectangle-13" type="password" name="confirm_senha" placeholder="********" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+                <input class="rectangle-13" type="password" name="confirm_senha" placeholder="********" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; " required></input>
             </div> 
+
+             <div class="col s12" style="margin-top: 5%;">
+                <label class="bexiga exo2-semi-bold-tuna-16px">CPF</label>
+            </div>
+    
+            <div class="col s12" style="margin-top: 5%;">
+                <input class="rectangle-13" name="cpf" placeholder="123.345.678-89" style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; " ></input>
+            </div>
+            <div class="col s12" style="margin-top: 5%;">
+                <label class="bexiga exo2-semi-bold-tuna-16px">Qual sua ocupação?</label>
+            </div>
+    
+            <div class="col s12" style="margin-top: 5%;">
+                <select name="ocupacao" style="background-color: #323B43 !important;">
+                    <option value="Profissional">Profissional</option>
+                    <option value="Estudante">Estudante</option>
+                    </select>
+                </div> 
+            <div class="col s12" style="margin-top: 5%;">
+                <label class="bexiga exo2-semi-bold-tuna-16px">Qual(is) seu(s) local(is) de trabalho?</label>
+            </div>
+    
+            <div class="col s12" style="margin-top: 5%;">
+                <input name="local_trabalho" type="text" class="rectangle-13"  style="font-size: 35px; color:#30566B; font-family: 'Exo 2-Regular'; "></input>
+            </div>
              <div class="col s12">
     
-                <a href="cadastro2.html" ><button class="avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 15%; display: block;
+                <a href="confirma_email.html" ><button class="avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 15%; display: block;
                   margin-left: auto;
                   margin-right: auto;">Avançar</button></a>
             </div>

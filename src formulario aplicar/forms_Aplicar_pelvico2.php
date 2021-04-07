@@ -42,13 +42,13 @@
 	      	<h6 style="font-size: 40px; color: #323B43; margin-bottom: 16px;">Condições ou sintomas que afetam o paciente em relação a:</h6>
 	      </div>
 
-	      <form>
+	      <form method="POST">
 	      	<div class="col s12">
 	      		<label class="bexiga exo2-semi-bold-tuna-16px">Bexiga</label>
 	      	</div>
 
 	      	<div class="col s12">
-	      		<textarea class="rectangle-33"></textarea>
+	      		<textarea name="condicoes_bexiga" class="rectangle-33"></textarea>
 	      	</div>
 
 	      	<div class="col s12">
@@ -56,7 +56,7 @@
 	      	</div>
 
 	      	<div class="col s12">
-	      		<textarea class="rectangle-33"></textarea>
+	      		<textarea name="condicoes_intestino" class="rectangle-33"></textarea>
 	      	</div>
 
 	      	<div class="col s12">
@@ -64,9 +64,8 @@
 	      	</div>
 
 	      	<div class="col s12">
-	      		<textarea class="rectangle-33"></textarea>
+	      		<textarea name="condicoes_Vagina" class="rectangle-33"></textarea>
 	      	</div>
-	      </form>
 		  <div class="col s12">
 			<h6 style="font-size: 35px;">1. Como os sintomas citados geralmente afetam sua habilidade de realizar atividades domésticas
 		  (ex: cozinhar, arrumar a casa, lavar
@@ -78,30 +77,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="bexiga1" type="radio" checked value="nem um pouco" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga1" type="radio" value="Um pouco" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="bexiga1" type="radio" value="Moderadamente" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga1" type="radio" value="Bastante" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -109,30 +106,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="intestino1" value="Nem um pouco" type="radio" checked />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino1" type="radio" value="Um pouco" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="intestino1" value="Moderadamente" type="radio"  />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino1" value="Bastante" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -140,30 +135,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="vagina1" value="Nem um pouco" type="radio" checked />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina1" value="Um pouco" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="vagina1" value="Moderadamente" type="radio"  />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina1" value="Bastante" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -175,30 +168,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="bexiga2" value="Nem um pouco" type="radio" checked />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga2" value="Um pouco" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="bexiga2" value="Moderadamente" type="radio"  />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga2" value="Bastante" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -206,30 +197,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="intestino2" value="Nem um pouco" type="radio" checked />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino2" value="Um pouco" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="intestino2" value="Moderadamente" type="radio"  />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino2" value="Bastante" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -237,30 +226,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="vagina2" value="Nem um pouco" type="radio" checked />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina2" value="Um pouco" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="vagina2" value="Moderadamente" type="radio"  />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina2" value="Bastante" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -272,30 +259,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="bexiga3" value="Nem um pouco" type="radio" checked />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga3" value="Um pouco" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
-				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 16px;"">Moderadamente</span>
+				  <input class="with-gap" name="bexiga3" value="Moderadamente" type="radio"  />
+				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 16px;">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga3" value="Bastante" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -303,30 +288,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="intestino3" value="Nem um pouco" type="radio" checked />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino3" value="Um pouco" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="intestino3" value="Moderadamente" type="radio"  />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino3" value="Bastante" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -334,30 +317,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="vagina3" value="Nem um pouco" type="radio" checked />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina3" value="Um pouco" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="vagina3" value="Moderadamente" type="radio"  />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina3" value="Bastante" type="radio" />
 				  <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -369,30 +350,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="bexiga4" value="Nem um pouco" type="radio" checked />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga4" value="Um pouco" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="bexiga4" value="Moderadamente" type="radio"  />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga4" value="Bastante" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -400,30 +379,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="intestino4" value="Nem um pouco" type="radio" checked />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino4" value="Um pouco" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="intestino4" value="Moderadamente" type="radio"  />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino4" value="Bastante" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -431,30 +408,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="vagina4" value="Nem um pouco" type="radio" checked />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina4" value="Um pouco" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="vagina4" value="Moderadamente" type="radio"  />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina4" value="Bastante" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -466,30 +441,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="bexiga5" value="Nem um pouco" type="radio" checked />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga5" value="Um pouco" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="bexiga5" value="Moderadamente" type="radio"  />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga5" value="Bastante" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -497,30 +470,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="intestino5" value="Nem um pouco" type="radio" checked />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino5" value="Um pouco" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="intestino5" value="Moderadamente" type="radio"  />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino5" value="Bastante" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -528,30 +499,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="vagina5" value="Nem um pouco" type="radio" checked />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina5" value="Um pouco" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="vagina5" value="Moderadamente" type="radio"  />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina5" value="Bastante" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -563,30 +532,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="bexiga6" value="Nem um pouco" type="radio" checked />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga6" value="Um pouco" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="bexiga6" value="Moderadamente" type="radio"  />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga6" value="Bastante" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -594,30 +561,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="intestino6" value="Nem um pouco" type="radio" checked />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino6" value="Um pouco" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="intestino6" value="Moderadamente" type="radio"  />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino6" value="Bastante" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -625,30 +590,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="vagina6" value="Nem um pouco" type="radio" checked />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina6" value="Um pouco" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="vagina6" value="Moderadamente" type="radio"  />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina6" value="Bastante" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -660,30 +623,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="bexiga7" value="Nem um pouco" type="radio" checked />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga7" value="Um pouco" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="bexiga7" value="Moderadamente" type="radio"  />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="bexiga7" value="Bastante" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -691,30 +652,28 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="intestino7" value="Nem um pouco" type="radio" checked />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino7" value="Um pouco" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="intestino7" value="Moderadamente" type="radio"  />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="intestino7" value="Bastante" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 		</div>
 
 		<div class="col s12">
@@ -722,37 +681,35 @@
 		  </div>
 
 		<div class="col s12">
-			<form action="#">
 				<label>
-				  <input name="group1" type="radio" checked />
+				  <input name="vagina7" value="Nem um pouco" type="radio" checked />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Nem um pouco</span>
 				</label>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina7" value="Um pouco" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Um pouco</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input class="with-gap" name="group1" type="radio"  />
+				  <input class="with-gap" name="vagina7" value="Moderadamente" type="radio"  />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Moderadamente</span>
 				</label>
 			  </p>
 			  <p>
 				<label>
-				  <input name="group1" type="radio" />
+				  <input name="vagina7" value="Bastante" type="radio" />
 				 <span style="font-family: 'Exo 2-Regular'; color: #323B43; font-size: 35px; margin-bottom: 3%">Bastante</span>
 				</label>
 			  </p>
-			</form>
 	      <div class="col s12">
 
-	      <a href="../src formulario concluido/forms_conclusao.html" ><button class="avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 100px; display: block;
+	      <a href="../src formulario concluido/forms_conclusao.html" ><button type="submit" class="avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 100px; display: block;
 			margin-left: auto;
 			margin-right: auto;">Avançar</button></a>
 	  </div>
-
+</form>
 	</div>
    </div>
    </div>
@@ -774,5 +731,39 @@
 	</footer>
 </div>
 <!--fim do menu inferior-->
+<?php
+	 include_once("../conexao.php");
+    //cadastro paciente 
+    $condicoes_bexiga = $_POST['condicoes_bexiga'];
+    $condicoes_intestino = $_POST['condicoes_intestino'];
+    $condicoes_Vagina = $_POST['condicoes_Vagina'];
+    $bexiga1 = filter_input(INPUT_POST, 'bexiga1', FILTER_SANITIZE_STRING);
+    $bexiga2 = filter_input(INPUT_POST, 'bexiga2', FILTER_SANITIZE_STRING);
+    $bexiga3 = filter_input(INPUT_POST, 'bexiga3', FILTER_SANITIZE_STRING);
+    $bexiga4 = filter_input(INPUT_POST, 'bexiga4', FILTER_SANITIZE_STRING);
+    $bexiga5 = filter_input(INPUT_POST, 'bexiga5', FILTER_SANITIZE_STRING);
+    $bexiga6 = filter_input(INPUT_POST, 'bexiga6', FILTER_SANITIZE_STRING);
+    $bexiga7 = filter_input(INPUT_POST, 'bexiga7', FILTER_SANITIZE_STRING);
+    $intestino1 = filter_input(INPUT_POST, 'intestino1', FILTER_SANITIZE_STRING);
+    $intestino2 = filter_input(INPUT_POST, 'intestino2', FILTER_SANITIZE_STRING);
+    $intestino3 = filter_input(INPUT_POST, 'intestino3', FILTER_SANITIZE_STRING);
+    $intestino4 = filter_input(INPUT_POST, 'intestino4', FILTER_SANITIZE_STRING);
+    $intestino5 = filter_input(INPUT_POST, 'intestino5', FILTER_SANITIZE_STRING);
+    $intestino6 = filter_input(INPUT_POST, 'intestino6', FILTER_SANITIZE_STRING);
+    $intestino7 = filter_input(INPUT_POST, 'intestino7', FILTER_SANITIZE_STRING);
+    $vagina1 = filter_input(INPUT_POST, 'vagina1', FILTER_SANITIZE_STRING);
+    $vagina2 = filter_input(INPUT_POST, 'vagina2', FILTER_SANITIZE_STRING);
+    $vagina3 = filter_input(INPUT_POST, 'vagina3', FILTER_SANITIZE_STRING);
+    $vagina4 = filter_input(INPUT_POST, 'vagina4', FILTER_SANITIZE_STRING);
+    $vagina5 = filter_input(INPUT_POST, 'vagina5', FILTER_SANITIZE_STRING);
+    $vagina6 = filter_input(INPUT_POST, 'vagina6', FILTER_SANITIZE_STRING);
+    $vagina7 = filter_input(INPUT_POST, 'vagina7', FILTER_SANITIZE_STRING);
+
+   
+
+    $result_questionario = "INSERT INTO `tb_questionario_pelvico`(`condicoes_bexiga`, `condicoes_intestino`, `condicoes_vagina`, `1_bexiga`, `1_intestino`, `1_vagina`, `2_bexiga`, `2_intestino`, `2_vagina`, `3_bexiga`, `3_intestino`, `3_vagina`, `4_bexiga`, `4_intestino`, `4_vagina`, `5_bexiga`, `5_intestino`, `5_vagina`, `6_bexiga`, `6_intestino`, `6_vagina`, `7_bexiga`, `7_intestino`, `7_vagina`) VALUES ('$condicoes_bexiga', '$condicoes_intestino','$condicoes_Vagina', '$bexiga1', '$bexiga2', '$bexiga3', '$bexiga4', '$bexiga5', '$bexiga6', '$bexiga7', '$intestino1', '$intestino2', '$intestino3', '$intestino4', '$intestino5', '$intestino6', '$intestino7', '$vagina1', '$vagina2', '$vagina3', '$vagina4', '$vagina5', '$vagina6', '$vagina7')";
+    $resultado_questionario = mysqli_query($conn, $result_questionario);
+    $linhas = mysqli_affected_rows($conn);
+?>
 </body>
 </html>
