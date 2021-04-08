@@ -65,7 +65,7 @@
                $i = 0; 
                while ($row_paciente = mysqli_fetch_assoc($resultado_pacientes)) {
                    $nomePaciente[$i] = $row_paciente['nome'];
-                   $data_nascimento[$i] = (new DateTime($row_paciente['data_nascimento']))->format('d/m/Y');
+                  $data_nascimento[$i] = (new DateTime($row_paciente['data_nascimento']))->format('d/m/Y');
                    $naturalidade[$i] = $row_paciente['naturalidade'];
         ?>
 	<div class="row" style="margin-top: 10%;">
@@ -105,7 +105,7 @@
 		<button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger" href="#modal1" style="margin-top: 100px; display: inline-block;
 		margin-left: auto;
 		margin-right: auto;">Excluir paciente</button>
-		<a href="pacientes_editar.php"><button class="  avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 100px; display: inline-block;
+		<a href="pacientes_editar.php?"><button class="  avanar valign-text-middle exo2-bold-white-16px" style="margin-top: 100px; display: inline-block;
 		margin-left: auto;
 		margin-right: auto;">Editar dados</button></a>
 

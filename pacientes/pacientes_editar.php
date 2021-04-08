@@ -28,6 +28,7 @@
 </div>
 </nav>
 	<!--fim título-->
+
 	<div class="container">
 		<div class="row">
 	      <div class="col s4 ">
@@ -45,44 +46,62 @@
 	
 
 	<div class="row" style="margin-top: 10%;">
-		<div class="col s12">
-			<div class="row linha" id="botoes">
-				<div class="col s6 center-align">
-					<button class="button-verde" id="meubotao3">Dados</button>
-				</div>
-				<div class="col s6 center-align">
-					<button class="button-cinza" id="meubotao4">Formulários</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	  	<div class="col s12">
+	  		<div class="col s6 center-align">
+	  			<button id="meubotao3" class="button-verde">Dados</button>
+	  		</div>
+	  		<div class="col s6 center-align">
+	  			<button id="meubotao4" class="button-cinza">Formulários</button>
+	  		</div>
+	  	</div>
+	 </div>
+	 <?php
+           include_once("../conexao.php");
+           $result_pacientes = "SELECT * FROM tb_paciente";
+           if ($resultado_pacientes = mysqli_query($conn, $result_pacientes)) {
+               $id_paciente = array(); 
+               $data_nascimento = array();
+               $naturalidade = array();
+               $i = 0; 
+               while ($row_paciente = mysqli_fetch_assoc($resultado_pacientes)) {
+                   $nomePaciente[$i] = $row_paciente['nome'];
+                   $id_paciente[$i] = $row_paciente['id_paciente'];
+                   $data_nascimento[$i] = (new DateTime($row_paciente['data_nascimento']))->format('d/m/Y');
+                   $naturalidade[$i] = $row_paciente['naturalidade'];
+        ?>
 	<div class="row" style="margin-top: 10%;">
+		<form method="POST" action="pacientes_visualizar.php">
 		<div class="col s12 ">
 			<p style="font-size: 40px; font-family: 'Exo 2-Regular'; color: #323B43; margin-top: 5%;"><b style="font-size: 35px; color: #323B43; margin-bottom: 16px; font-style: bold;
 				font-family: 'Exo 2-Semi';
 				text-align: left;
 				padding: 24px 0;">Paciente:</b></p>
-			<input type="text" value="Davila Fernandes" style="font-size: 40px;">
+			<input type="text" name="nome" value="<?php echo $nomePaciente[$i];?>" style="font-size: 40px;" >
 		</div>
 
 		<div class="col s6 ">
 			<p style="font-size: 40px; font-family: 'Exo 2-Regular'; color: #323B43; margin-top: 5%;"><b style="font-size: 35px; color: #323B43; margin-bottom: 16px; font-style: bold;
 				font-family: 'Exo 2-Semi';
 				text-align: left;
-				padding: 24px 0;">Data de nascimento:</b></p>
-			<input type="text" value="22/06/1990" style="font-size: 40px;" >
+				padding: 24px 0;">Data de Nascimento:</b></p>
+			<input type="text" name="data_nascimento" value="<?php echo $data_nascimento[$i]; ?>"  style="font-size: 40px;" >
 		</div>
 
 		<div class="col s12 ">
 			<p style="font-size: 40px; font-family: 'Exo 2-Regular'; color: #323B43; margin-top: 5%;"><b style="font-size: 35px; color: #323B43; margin-bottom: 16px; font-style: bold;
 				font-family: 'Exo 2-Semi';
 				text-align: left;
-				padding: 24px 0;">Cidade:</b></p>
-			<input type="text" value="Fortaleza" style="font-size: 40px;">
+				padding: 24px 0;">Naturalidade:</b></p>
+			<input type="text" name="naturalidade" value="<?php echo $naturalidade[$i];?>"  style="font-size: 40px;" >
 		</div>
 	</div>
-	
+ <?php
+              $i++;
+               }
+           }
+           ?>  
+         <?php  
+        ?>
 	<div class="col s12">
 
 		<a href="pacientes_visualizar.html"><button class=" avanar valign-text-middle exo2-bold-white-16px"  style="margin-top: 100px; display: inline-block;
@@ -102,17 +121,35 @@
 				<div class="row" style="background-color: #30566B;">		
 					<div class="modal-footer" style="background-color: #30566B;">
 						<div class="col s5">
-				<button class=" modal-close avanar valign-text-middle exo2-bold-white-16px" href="#!" style="display: inline-block;
+				<button class=" modal-close avanar valign-text-middle exo2-bold-white-16px" href="#" style="display: inline-block;
 				margin-left: auto;
 				margin-right: auto; width: auto; height: auto; border-style: double; border-color: #5ABBE5; color: #5ABBE5;">Cancelar</button>
-</div>
-<div class="col s5">
-				<button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger fechar-modal modal-close" href="#modal2" style="margin-top: 0px; display: inline-block;
-				margin-left: auto;
-				margin-right: auto; width: auto; height: auto; border-style: double; border-color: #5ABBE5; color: white; text-align: right;">Alterar</button>
-</div>		</div>	
-	</div>
+				<a href="pacientes_visualizar.php"><button class=" avanar valign-text-middle exo2-bold-white-16px modal-trigger fechar-modal modal-close" name="submitPaciente" style="margin-top: 0px; display: inline-block;
+					 width: auto; height: auto; border-style: double; border-color: #5ABBE5; color: white; text-align: center; margin-bottom: 0px;">Concluir</button></a>
+			</div>
 		</div>
+	</div>
+</div></form>
+</div>
+<?php
+	include_once("../conexao.php");
+	$id_paciente = array(); 
+	$nomePaciente[$i] = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
+	$data_nascimento[$i] = filter_input(INPUT_POST, 'data_nascimento', FILTER_SANITIZE_STRING);
+	$naturalidade[$i] = filter_input(INPUT_POST, 'naturalidade', FILTER_SANITIZE_STRING);
+	
+	if ($conn) {
+		$query = mysqli_query($conn,"update tb_paciente set nome = '$nomePaciente[$i]', data_nascimento = '$data_nascimento[$i]', naturalidade = '$naturalidade[$i]' where id_paciente = '$id_paciente[$i]'");
+		if ($query) {
+			header("Location: ". mysqli_error($conn));
+		}else{
+			die("ERROR: ". mysqli_error($conn));
+		}
+	}else{
+		die("ERROR: ". mysqli_error($conn));
+	}
+
+?>
 		<!--fim modal de excluir formulario-->
 
 		<!--inicio modal de confirmar exclusão-->

@@ -48,11 +48,12 @@
         </div>
     </div>
     <!--inicio barra de pesquisa-->
+  
         <div class="row">
             <div class="col s10 barra-busca" style=" background-color: white; border-bottom-left-radius: 20px; border-top-left-radius: 20px;">
                 <h6 style="margin-left: 5%;">Buscar por paciente</h6>
                 <form>
-                    <input type="text" name="" size="20" placeholder="Toque para buscar" class="campo-busca" style="background-color: #EBF0F1;
+                    <input type="text" name="nome_paciente" size="20" placeholder="Toque para buscar" class="campo-busca" style="background-color: #EBF0F1;
                     border-radius: 7px; width: 90%; margin-left: 5%; height: 50px;">
                 </form>
             </div>
@@ -68,12 +69,18 @@
            include_once("conexao.php");
            $result_pacientes = "SELECT * FROM tb_paciente";
            if ($resultado_pacientes = mysqli_query($conn, $result_pacientes)) {
-               $nomePaciente = array(); 
+               $nomePaciente = array();
+               $id_paciente = array(); 
+               $data_nascimento = array();
+               $naturalidade = array();
                $i = 0; 
                while ($row_paciente = mysqli_fetch_assoc($resultado_pacientes)) {
                    $nomePaciente[$i] = $row_paciente['nome'];
+                   $id_paciente[$i] = $row_paciente['id_paciente'];
+                   $data_nascimento[$i] = (new DateTime($row_paciente['data_nascimento']))->format('d/m/Y');
+                   $naturalidade[$i] = $row_paciente['naturalidade'];
         ?>
-            <a href="pacientes/pacientes_visualizar.php"><div class="row">
+            <a href="pacientes/pacientes_visualizar.php?editarPaciente=<?php echo $id_paciente[$i]?>?&nomePaciente = <?php echo $nomePaciente[$i]?>&naturalidade = <?php echo $naturalidade[$i]?>&data_nascimento = <?php echo $data_nascimento[$i]?>" ><div class="row">
             <div class="col s12 categorias" style="display: inline-block; border-radius: 20px; margin-top: 10%; background-color: #5ABBE5;">
                 <h6 style="display: inline-block; margin-left: 5%; padding: 0px; position:relative !important;
                 font-size: 50px; color:white;"><?php echo $nomePaciente[$i];?></h6>

@@ -37,7 +37,7 @@
             <button id="meubotao1" class="button-verde">Login</button>
         </div>
         <div class="col s6 center-align">
-            <button id="meubotao2" class="button-cinza" onclick="window.location.href = 'cadastro.html'">Cadastrar</button>
+            <button id="meubotao2" class="button-cinza" onclick="window.location.href = 'cadastro.php'">Cadastrar</button>
         </div>
     </div>
     <div class="row">

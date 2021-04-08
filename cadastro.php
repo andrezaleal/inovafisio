@@ -34,7 +34,7 @@
         </div>
     <div class="row linha" id="botoes" style="margin-top: 8%;">
         <div class="col s6 center-align">
-            <button id="meubotao1" class="button-cinza"onclick="window.location.href = 'login.html'">Login</button>
+            <button id="meubotao1" class="button-cinza"onclick="window.location.href = 'login.php'">Login</button>
         </div>
         <div class="col s6 center-align">
             <button id="meubotao2" class="button-verde">Cadastrar</button>
