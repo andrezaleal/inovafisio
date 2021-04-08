@@ -170,8 +170,12 @@
 </body>
 <script>
 	function Resultado(){
-		let inputs = document.querySelectorAll('input[type=radio]:checked');
-		alert (inputs.length);
+		var inputs = document.querySelectorAll('input[type=radio]:checked');
+        var soma = 0;
+        inputs.forEach(inputs => {
+  soma += parseInt(inputs.value);
+});
+alert("Você somou" + " " + soma + "pontos");
 }	
 
 </script>
