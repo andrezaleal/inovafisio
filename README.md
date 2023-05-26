@@ -1,17 +1,5 @@
-Projeto INOVAFORMS executado através do link: inovaforms.github.io
+# Projeto INOVAFORMS
 
-Equipe Pterodátilo
-
-Integrantes:
-
-          Ana Biatriz Cavalcante
-          Andreza Deyse Leal
-          Antonio Clessio Soares
-          João Victor Sampaio
-          Maria Eduarda Ferreira
-Cliente:
-
-          Núcleo de Pesquisas e Inovações Tecnológicas em Reabilitação Humana –  INOVAFISIO
 Descrição do Projeto:
 
           Projeto prático e intuitivo, utilizando como base o modelo conceitual de seleção e preenchimento de informações. Desse modo, visando auxiliar
@@ -34,3 +22,27 @@ Descrição do Projeto:
           sempre mudar de ideia e transitar entre as situações desejadas no momento em que achar necessário, como também, voltar para a tela anterior.
           Por isso, o recurso deve fornecer um menu que irá se fazer presente em todas as telas para permitir que o próprio usuário se redirecione entre todos os 
           segmentos apresentados no momento em que este considerar conveniente.
+
+
+
+   
+**:computer: TECNOLOGIAS**
+
+           - HTML
+           - CSS
+           - Javascript
+           - Materialize
+           - PHP
+           - SQL
+Equipe Pterodátilo
+
+Integrantes:
+
+          Ana Biatriz Cavalcante
+          Andreza Deyse Leal
+          Antonio Clessio Soares
+          João Victor Sampaio
+          Maria Eduarda Ferreira
+Cliente:
+
+          Núcleo de Pesquisas e Inovações Tecnológicas em Reabilitação Humana –  INOVAFISIO
